@@ -1,10 +1,11 @@
 import { useState, useMemo } from 'react';
-import { data } from './data';
+import { data, theory } from './data';
 import './index.css';
 
 function App() {
-  const [view, setView] = useState('home'); // home, topics, flashcards, quiz-setup, quiz, quiz-summary
+  const [view, setView] = useState('home'); 
   const [selectedTopic, setSelectedTopic] = useState(null);
+  const [expandedTheory, setExpandedTheory] = useState(null);
   
   // Flashcards state
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
@@ -48,11 +49,9 @@ function App() {
   };
 
   const generateQuiz = (numQuestions) => {
-    // Get random questions
     let shuffled = [...allQuestions].sort(() => 0.5 - Math.random());
     let selected = shuffled.slice(0, numQuestions);
 
-    // Generate options for each
     const questionsWithOptions = selected.map(q => {
       let options = [q.a];
       let otherAnswers = allQuestions.filter(other => other.a !== q.a).map(o => o.a);
@@ -89,6 +88,11 @@ function App() {
     }
   };
 
+  const toggleTheory = (index) => {
+    if (expandedTheory === index) setExpandedTheory(null);
+    else setExpandedTheory(index);
+  };
+
   return (
     <div className="app-container">
       <header className="header" onClick={() => setView('home')} style={{cursor: 'pointer'}}>
@@ -99,28 +103,103 @@ function App() {
       {view === 'home' && (
         <main className="menu-view">
           <div className="menu-card" onClick={() => setView('topics')}>
-            <h2>📚 Nauka z fiszek</h2>
+            <div className="icon-wrapper">📚</div>
+            <h2>Nauka z fiszek</h2>
             <p>Przeglądaj pytania z podziałem na konkretne tematy i odkrywaj odpowiedzi.</p>
           </div>
           <div className="menu-card quiz-card" onClick={startQuizSetup}>
-            <h2>🎯 Quiz ABCD</h2>
+            <div className="icon-wrapper">🎯</div>
+            <h2>Quiz ABCD</h2>
             <p>Sprawdź swoją wiedzę w losowym teście wyboru ze wszystkich tematów.</p>
+          </div>
+          <div className="menu-row">
+            <div className="menu-card small-card" onClick={() => setView('theory')}>
+              <div className="icon-wrapper">📜</div>
+              <h2>Teoria</h2>
+            </div>
+            <div className="menu-card small-card" onClick={() => setView('info')}>
+              <div className="icon-wrapper">ℹ️</div>
+              <h2>Info</h2>
+            </div>
+          </div>
+        </main>
+      )}
+
+      {view === 'theory' && (
+        <main className="theory-view">
+          <button className="back-btn" onClick={() => setView('home')}>← Wróć do menu</button>
+          <div className="view-header">
+            <h2>📜 Streszczenia Referatów</h2>
+            <p>Pigułka wiedzy, która pomoże Ci ułożyć pytania w logiczną całość.</p>
+          </div>
+          <div className="theory-list">
+            {theory.map((item, index) => (
+              <div 
+                key={index} 
+                className={`theory-card ${expandedTheory === index ? 'expanded' : ''}`}
+                onClick={() => toggleTheory(index)}
+              >
+                <div className="theory-card-header">
+                  <h3>{item.topic}</h3>
+                  <span className="toggle-icon">{expandedTheory === index ? '−' : '+'}</span>
+                </div>
+                {expandedTheory === index && (
+                  <div className="theory-content">
+                    <p>{item.content}</p>
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        </main>
+      )}
+
+      {view === 'info' && (
+        <main className="info-view">
+          <button className="back-btn" onClick={() => setView('home')}>← Wróć do menu</button>
+          <div className="info-card">
+            <div className="icon-wrapper large">⏱️</div>
+            <h2>Ile czasu zajmie Ci nauka?</h2>
+            <p>Mamy w bazie łącznie <strong>{allQuestions.length} pytań</strong> rozbitych na {data.length} tematów.</p>
+            <div className="timeline">
+              <div className="timeline-item">
+                <span className="dot"></span>
+                <strong>Pierwsze czytanie (ok. 1-1.5h):</strong> Przejście przez wszystkie tematy w trybie fiszek. Część rzeczy od razu naturalnie zapamiętasz.
+              </div>
+              <div className="timeline-item">
+                <span className="dot"></span>
+                <strong>Drugie przejście (ok. 1h):</strong> Ponowne przejrzenie. Będziesz już pamiętać około 50-60% odpowiedzi.
+              </div>
+              <div className="timeline-item">
+                <span className="dot"></span>
+                <strong>Utrwalenie w Quizie (ok. 45-60 min):</strong> Rozwiązanie 3-4 quizów. Mózg rozpoznaje prawidłowe odpowiedzi i buduje żelazne skojarzenia.
+              </div>
+            </div>
+            <p className="summary-text">Razem: około <strong>3 do 4 godzin</strong> solidnej nauki. Najlepszy efekt osiągniesz rozbijając to na krótsze sesje!</p>
+          </div>
+          
+          <div className="info-card verification-card">
+            <h3>🛡️ O bazie pytań</h3>
+            <p>Baza została dokładnie zweryfikowana z dwóch dostarczonych plików PDF (ponad 120 pytań z tabeli i notatek). Wszystkie powtórzenia zostały złączone w spójne bloki wiedzy. Z bazy wykluczono tematy, które nie obowiązywały w wymaganym spisie referatów.</p>
           </div>
         </main>
       )}
 
       {view === 'topics' && (
-        <main>
+        <main className="topics-view">
           <button className="back-btn" onClick={() => setView('home')}>← Wróć do menu</button>
           <div className="topics-grid">
             {data.map((topicData, index) => (
               <div 
                 key={index} 
-                className="glass-card"
+                className="glass-card topic-item"
                 onClick={() => startFlashcards(index)}
               >
-                <h3>{topicData.topic}</h3>
-                <p>{topicData.questions.length} pytań</p>
+                <div className="topic-content">
+                  <h3>{topicData.topic}</h3>
+                  <span className="badge">{topicData.questions.length} pytań</span>
+                </div>
+                <div className="topic-arrow">→</div>
               </div>
             ))}
           </div>
@@ -131,13 +210,17 @@ function App() {
         <main className="flashcard-view">
           <button className="back-btn" onClick={() => setView('topics')}>← Wróć do tematów</button>
           
-          <div className="progress-indicator">
-            {currentQuestionIndex + 1} / {data[selectedTopic].questions.length}
+          <div className="progress-container">
+            <div className="progress-bar" style={{width: `${((currentQuestionIndex + 1) / data[selectedTopic].questions.length) * 100}%`}}></div>
+          </div>
+          <div className="progress-text">
+            Pytanie {currentQuestionIndex + 1} z {data[selectedTopic].questions.length}
           </div>
 
           <div className={`flip-card ${isFlipped ? 'flipped' : ''}`} onClick={() => setIsFlipped(!isFlipped)}>
             <div className="flip-card-inner">
               <div className="flip-card-front">
+                <div className="card-decoration"></div>
                 <span className="tap-hint">Tapnij, aby obrócić</span>
                 <h2 className="question-text">
                   {data[selectedTopic].questions[currentQuestionIndex].q}
@@ -160,7 +243,7 @@ function App() {
               Poprzednie
             </button>
             <button 
-              className="nav-btn" 
+              className="nav-btn primary-btn" 
               onClick={nextFlashcard}
               disabled={currentQuestionIndex === data[selectedTopic].questions.length - 1}
             >
@@ -173,13 +256,14 @@ function App() {
       {view === 'quiz-setup' && (
         <main className="quiz-setup-view">
           <button className="back-btn" onClick={() => setView('home')}>← Wróć do menu</button>
+          <div className="icon-wrapper large">🎯</div>
           <h2>Wybierz liczbę pytań do Quizu:</h2>
           <p>Mamy łącznie {allQuestions.length} pytań w bazie.</p>
           <div className="quiz-options">
             <button className="quiz-btn" onClick={() => generateQuiz(10)}>10 pytań</button>
             <button className="quiz-btn" onClick={() => generateQuiz(20)}>20 pytań</button>
             <button className="quiz-btn" onClick={() => generateQuiz(50)}>50 pytań</button>
-            <button className="quiz-btn" onClick={() => generateQuiz(allQuestions.length)}>Wszystkie ({allQuestions.length})</button>
+            <button className="quiz-btn highlight" onClick={() => generateQuiz(allQuestions.length)}>Wszystkie ({allQuestions.length})</button>
           </div>
         </main>
       )}
@@ -187,11 +271,25 @@ function App() {
       {view === 'quiz' && quizQuestions.length > 0 && (
         <main className="quiz-play-view">
           <button className="back-btn" onClick={() => setView('quiz-setup')}>← Przerwij quiz</button>
-          <div className="progress-indicator">
-            Wynik: {quizScore} | Pytanie {quizIndex + 1} / {quizQuestions.length}
+          
+          <div className="quiz-header-stats">
+            <div className="stat">
+              <span className="label">Wynik</span>
+              <span className="value score">{quizScore}</span>
+            </div>
+            <div className="stat">
+              <span className="label">Pytanie</span>
+              <span className="value">{quizIndex + 1} / {quizQuestions.length}</span>
+            </div>
+          </div>
+          
+          <div className="progress-container">
+            <div className="progress-bar accent" style={{width: `${((quizIndex + 1) / quizQuestions.length) * 100}%`}}></div>
           </div>
 
-          <h2 className="quiz-question">{quizQuestions[quizIndex].q}</h2>
+          <div className="quiz-question-container">
+            <h2 className="quiz-question">{quizQuestions[quizIndex].q}</h2>
+          </div>
 
           <div className="quiz-answers">
             {quizQuestions[quizIndex].options.map((opt, idx) => {
@@ -208,7 +306,8 @@ function App() {
                   onClick={() => handleQuizAnswer(opt)}
                   disabled={isAnswered}
                 >
-                  {opt}
+                  <span className="option-letter">{['A', 'B', 'C', 'D'][idx]}</span>
+                  <span className="option-text">{opt}</span>
                 </button>
               )
             })}
@@ -216,7 +315,7 @@ function App() {
 
           {isAnswered && (
             <div className="quiz-next-container">
-              <button className="nav-btn action" onClick={nextQuizQuestion}>
+              <button className="nav-btn primary-btn pulse" onClick={nextQuizQuestion}>
                 {quizIndex < quizQuestions.length - 1 ? 'Następne pytanie →' : 'Zakończ quiz'}
               </button>
             </div>
@@ -232,13 +331,24 @@ function App() {
             <span className="divider">/</span>
             <span>{quizQuestions.length}</span>
           </div>
-          <p>Twój wynik to {Math.round((quizScore / quizQuestions.length) * 100)}%</p>
+          <p className="score-percentage">Twój wynik to <strong>{Math.round((quizScore / quizQuestions.length) * 100)}%</strong></p>
+          
+          <div className="feedback-message">
+            {quizScore / quizQuestions.length >= 0.8 ? 'Świetna robota! Jesteś gotowa na egzamin.' : 
+             quizScore / quizQuestions.length >= 0.5 ? 'Niezły wynik! Jeszcze trochę powtórek i będzie idealnie.' : 
+             'Początki bywają trudne. Przejrzyj jeszcze raz fiszki i spróbuj ponownie!'}
+          </div>
+
           <div className="controls">
             <button className="nav-btn" onClick={() => setView('quiz-setup')}>Zagraj ponownie</button>
-            <button className="nav-btn action" onClick={() => setView('home')}>Wróć do menu</button>
+            <button className="nav-btn primary-btn" onClick={() => setView('home')}>Wróć do menu</button>
           </div>
         </main>
       )}
+
+      <footer className="footer">
+        <p>Created by wisnia</p>
+      </footer>
     </div>
   );
 }
