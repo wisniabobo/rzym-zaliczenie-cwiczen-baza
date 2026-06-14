@@ -4,7 +4,7 @@ export const data = [
     "questions": [
       {
         "q": "gdzie znajduje sie na stale czarka znaleziona w Opolu/Goslawicach odnaleziona w Iw. p.n.e.,",
-        "a": "Pucharek – czarka odnaleziona w Opolu (w I w ) obecnie znajduje się w Muzeum Archeologicznym we Wrocławiu"
+        "a": "Pucharek – czarka odnaleziona w Opolu (w I w) obecnie znajduje się w Muzeum Archeologicznym we Wrocławiu"
       },
       {
         "q": "jak nazywają się ustawy przeciwko zbytkowi,",
@@ -12,7 +12,7 @@ export const data = [
       },
       {
         "q": "Wymien miasta zwiazane z Libaniuszem:",
-        "a": "konstantynopol, antiochia, bejrut, ateny"
+        "a": "Konstantynopol, antiochia, bejrut, ateny"
       },
       {
         "q": "którzy cesarze sprzeciwiali sie aborcji:",
@@ -20,7 +20,7 @@ export const data = [
       },
       {
         "q": "w którym roku wg Tytusa jakiegos w rzymie byl budynek 3- pietrowy",
-        "a": "218 r p.n.e budynek wielopiętrowy w Rzymie"
+        "a": "218 r p.n.e. budynek wielopiętrowy w Rzymie"
       },
       {
         "q": "jak po lacinie jest obraza 2 strony albo sedziego",
@@ -32,7 +32,7 @@ export const data = [
       },
       {
         "q": "ktory papiez z XIII w. zakazal klechom studiowac prawo",
-        "a": "Papież Honoriusz III w 1219r. wydał – Bulla Super Speculam, wprowadzając zakaz nauki prawa rzymskiego na Uniwersytecie Paryskim"
+        "a": "Papież Honoriusz III w 1219 r. wydał – Bulla Super Speculam, wprowadzając zakaz nauki prawa rzymskiego na Uniwersytecie Paryskim"
       }
     ]
   },
@@ -41,23 +41,23 @@ export const data = [
     "questions": [
       {
         "q": "Wymień miasta związane z życiem i nauczaniem Mommsena",
-        "a": "- Garding (pochodzenie)\n- Kilonia (studia)\n- Rzym\n- Wrocław\n- Lipsk\n- Zurych\n- Berlin\n- Jedlina Zdrój"
+        "a": "Garding (pochodzenie), Kilonia (studia), Rzym (pracował w Instytucie Archeologicznym), Lipsk (wykładał tam na uniwersytecie, katedra cywilistyczna), Wrocław i Zurych (wykładał), Charlottenburg (śmierć), Jedlina Zdrój i Karkonosze (miejsca które odwiedził podczas pobytu w Polsce)"
       },
       {
         "q": "W którym roku Mommsen rozpoczął nauczanie we Wrocławiu?",
-        "a": "- 1854r."
+        "a": "- 1854 r."
       },
       {
         "q": "W którym roku i za co (w jakiej dziedzinie) Mommsen otrzymał nagrodę Nobla?",
-        "a": "- W 1902r. otrzymał Nagrodę Nobla w dziedzinie literatury za swoje dzieło \"Historia Rzymu\""
+        "a": "- W 1902 r. otrzymał Nagrodę Nobla w dziedzinie literatury za swoje dzieło \"Historia Rzymu\""
       },
       {
         "q": "Kiedy się urodził i kiedy zmarł?",
-        "a": "- Urodził się w 30.11.1817r., a zmarł w 01.11.1903r."
+        "a": "- Urodził się w 30.11.1817 r., a zmarł w 01.11.1903 r."
       },
       {
         "q": "Napisz wszystko co wiesz o Theodorze Mommsenie?",
-        "a": "- Urodził się 30 listopada 1817r. w Garding w Schleswigu, wychowywał się w Oldesloe. Studiował na uniwersytecie w Kilonii. W latach 1844-1847 robił stypendium we Włoszech, w Rzymie. Dużo czasu poświęcal polityce i przez to naraża swoją karierę naukową. Wykładał na uniwersytecie w Lipsku, Zurychu i Wrocławiu. W 1902r. otrzymał literacką nagrodę nobla za swoje dzieło “Historia Rzymu”. Zmarł 1 listopada 1903r. w Charlottenburg w Berlinie."
+        "a": "Urodził się 30 listopada 1817 r. w Garding w Schleswigu. Syn ubogiego protestanckiego pastora. Wychował się w Oldesloe. Uczył się w Gymnasium Christianeum w Altonie. 1838-1843 studiował prawoznawstwo na uniwersytecie w Kilonii (pisma Fridricha Karla von Savigny - wpływ na późniejszą karierę zawodową TM). 1844-1847 - stypendium we Włoszech (Instytut Archeologiczny w Rzymie). Wtedy opracował koncepcję stworzenia projektu: Corpus Inscriptionum Latinarum - gigantycznego zbioru inskrypcji łacińskich, zachowanych do czasów dzisiejszych na materiałach trwałych (kamień, metal). Po powrocie z Włoch pracował w czasopiśmie Schleswig-Holsteinische Zeitung, TM popierał też dążenia zjednoczeniowe Niemiec. Pod koniec 1848 r. zaproponowano mu profesurę prawa cywilnego na Uniwersytecie w Lipsku. Był posłem w pruskim Landtagu (1863-1866, 1873-1879) oraz w niemieckim Reichstagu (1881-1884). Wiele czasu poświęcał polityce, jednak nie miał na tym polu zbyt dużych osiągnięć, wręcz przeciwnie narażał na szwank swoją karierę naukową (przez działalność polityczną utracił profesurę na Uniwersytecie w Lipsku). Wykładał na Uniwersytetach we Wrocławiu i w Zurychu. 1902 - przyznanie literackiej Nagrody Nobla. Prezentował negatywny stosunek do Słowian. Zmarł 1 listopada 1903 r. - Charlottenburg."
       },
       {
         "q": "W jakim mieście studiował Mommsen?",
@@ -73,7 +73,7 @@ export const data = [
       },
       {
         "q": "Jakie poglądy prezentował Mommsen?",
-        "a": "- Negatywne również wobec Polaków. Był nacjonalistą, stąd spór z Oswaldem Balzerem. Liberal - uważał, że sytuacja polityczna w Prusach po zawarciu przez nie w 1850r. z Austrią, konwencji w Ołomuńcu jest niekorzystna."
+        "a": "- Negatywne również wobec Polaków. Był nacjonalistą, stąd spór z Oswaldem Balzerem. Liberal - uważał, że sytuacja polityczna w Prusach po zawarciu przez nie w 1850 r. z Austrią, konwencji w Ołomuńcu jest niekorzystna."
       },
       {
         "q": "Gdzie się wychował Mommsen?",
@@ -125,7 +125,7 @@ export const data = [
       },
       {
         "q": "Opisz ewolucję prac nad Historią Rzymu Mommsena",
-        "a": "- Pracę rozpoczął w Zurychu a ukończył we Wrocławiu. Drugie wydanie 1 tomu miało 924 strony, aa pierwsze tylko 644 stron. Prace nad 1 tomem zakończył 1 kwietnia 1855 r. jednocześnie kontynuował prace nad kolejnymi częściami. Trzeci tom zakończył na wiosnę 1856 r. Dzieło zostało docenione złotym medalem i nagrodą w wysokości 300 dukatów na urodzinach króla bawarskiego, a także mecenasa sztuki Maksymiliana II."
+        "a": "Historia Rzymu, prace rozpoczął w Zurychu a ukończył we Wrocławiu. Drugie wydanie I tomu miało 924 strony, a pierwsze tylko 644 (I tom - 1 kwietnia 1855 r., II 25.12.1855 r., III wiosna 1856 r.). Pierwszymi czytelnikami Historii Rzymu byli Jacob Barneys oraz O. Jahn. I tom skrytykowany przez Karla Schneidera. 28 listopada 1856 r. z okazji urodzin bawarskiego króla Maksymiliana II, T. Mommsen został odznaczony za nie złotym medalem i nagrodą w wysokości 300 dukatów. \"IV tom\" Historii Rzymskiej - okolicznościowy zeszyt, ukazał się w 1877 r. z okazji 60 urodzin autora. 1885 r. - Prowincje Rzymu. Od Cezara do Dioklecjana uznawana za \"V tom\"."
       },
       {
         "q": "Do czyich dzieł porównywano dzieła Mommsena?",
@@ -133,7 +133,7 @@ export const data = [
       },
       {
         "q": "Na czym zakończył się opis dziejów rzymu Mommsena?",
-        "a": "- Opis dziejów rzymu Mommsena zakończył się na 46r. pne."
+        "a": "- Opis dziejów rzymu Mommsena zakończył się na 46 r. p.n.e."
       },
       {
         "q": "Na ile szacuje się dorobek Mommsena?",
@@ -141,19 +141,19 @@ export const data = [
       },
       {
         "q": "Kiedy senat odwołał Mommsena ze stanowiska na na Uwr?",
-        "a": "- 12.12.1857r., Mommsen wyjechał w podróż służbową w celu odnalezienia nowych źródeł i już nie wrócił do wrocławia."
+        "a": "- 12.12.1857 r., Mommsen wyjechał w podróż służbową w celu odnalezienia nowych źródeł i już nie wrócił do wrocławia."
       },
       {
         "q": "W którym roku Mommsen uzyskał tytuł dr honoris causa na uniwersytecie w Greifswaldzie?",
-        "a": "- 28.05.1856r."
+        "a": "- 28.05.1856 r."
       },
       {
         "q": "Rodzina Mommsena",
-        "a": "- Żona - Marie Riemer, wzięli ślub 10.09.1854 r., mieli 7 dzieci"
+        "a": "Marie Reimer (żona - ślub 10.09.1854), Karl Reimer (teść, zm. 1858), Johanna Reimer (teściowa), Sophie Elisabeth (mama), Marie (siostra), Marie Mommsen (córka, ur. 28.06.1855), Wolfgang Mommsen (syn, ur. 23.03.1857)"
       },
       {
         "q": "Gdzie mieszkał Mommsen we Wrocławiu?",
-        "a": "- ul. Kotlarska 19 w kamienicy “Pod Złotym Krzyżem”, 1856r. przeprowadził się na ul. Ketzerberga 10"
+        "a": "- Ul. Kotlarska 19 w kamienicy “Pod Złotym Krzyżem”, 1856 r. przeprowadził się na ul. Ketzerberga 10"
       },
       {
         "q": "Gdzie studiował prawo Mommsen?",
@@ -170,7 +170,7 @@ export const data = [
     "questions": [
       {
         "q": "Kiedy i gdzie ukazał się anonimowy list Theodora Mommsena do “Niemców w Austrii”?",
-        "a": "- 31 października 1897r. na pierwszej stronie wiedeńskiego dziennika “Neue Freie Presse”"
+        "a": "- 31 października 1897 r. na pierwszej stronie wiedeńskiego dziennika “Neue Freie Presse”"
       },
       {
         "q": "Jak wyraził się Mommsen o Czechach i Słowianach w liście do “Niemców w Austrii”?",
@@ -182,11 +182,11 @@ export const data = [
       },
       {
         "q": "Czego dotyczył spór między Mommsenem a Oswaldem Balzerem?",
-        "a": "- Oswald Balzer bronił kultury słowian wystosowując list otwarty przeciwko pogardliwej odezwie niemieckiego historyka i prawnika w 1897r."
+        "a": "- Oswald Balzer bronił kultury słowian wystosowując list otwarty przeciwko pogardliwej odezwie niemieckiego historyka i prawnika w 1897 r."
       },
       {
         "q": "Jak doszło do sporu Mommsena z Balzerem?",
-        "a": "- 31.10.1897r. w Neue Freie Presse ukazał się artykuł Mommsena do Niemców w Austrii. W Rysiu 1897 na czele rządu Wiedeńskiego stanął Kazimierz Badeni (Polak), który wydał rozporządzenia językowe dotyczące przyznania językowi czeskiemu statusu równego z językiem niemieckim w krajach korony świętego Wacława, co oznaczało, że zamieszkujący tam Niemcy musieliby nauczyć się języka czeskiego. Niemcy nie chcieli tego robić. Mommsen jako autorytet, miał duży wpływ na ludzi poprzez swój artykuł, a ton w jakim został napisany był niegodny tak zasłużonego naukowca. W swoim wystąpieniu wezwał do jedności wszystkich Niemców w obliczu zagrożenia ze strony Słowian “apostołów barbarzyństwa”, którzy wzięli się do pracy, aby pogrzebać w “otchłani swej dzikości” dzieło 500-letnie niemieckiej pracy. Artykuł ten powielany był na łamach prasy w całej Europie. Oswald Balzer 20.11.1897r. najdobitniej wypowiedział się w kwestii na łamach słowa polskiego, broniąc kultury słowian."
+        "a": "- 31.10.1897 r. w Neue Freie Presse ukazał się artykuł Mommsena do Niemców w Austrii. W Rysiu 1897 na czele rządu Wiedeńskiego stanął Kazimierz Badeni (Polak), który wydał rozporządzenia językowe dotyczące przyznania językowi czeskiemu statusu równego z językiem niemieckim w krajach korony świętego Wacława, co oznaczało, że zamieszkujący tam Niemcy musieliby nauczyć się języka czeskiego. Niemcy nie chcieli tego robić. Mommsen jako autorytet, miał duży wpływ na ludzi poprzez swój artykuł, a ton w jakim został napisany był niegodny tak zasłużonego naukowca. W swoim wystąpieniu wezwał do jedności wszystkich Niemców w obliczu zagrożenia ze strony Słowian “apostołów barbarzyństwa”, którzy wzięli się do pracy, aby pogrzebać w “otchłani swej dzikości” dzieło 500-letnie niemieckiej pracy. Artykuł ten powielany był na łamach prasy w całej Europie. Oswald Balzer 20.11.1897 r. najdobitniej wypowiedział się w kwestii na łamach słowa polskiego, broniąc kultury słowian."
       },
       {
         "q": "Jak komentator Krakowskiego czasu nazwał Mommsena?",
@@ -194,7 +194,7 @@ export const data = [
       },
       {
         "q": "Kim był Oswald Balzer?",
-        "a": "- Polski uczony Historyk, jurysta, profesor z uniwersytetu lwowskiego, patriota. Wywodził się z rodziny pochodzenia niemieckiego."
+        "a": "Oswald Balzer - polski uczony, jurysta (1858-1933), profesor z Uniwersytetu Lwowskiego, patriota. Dorobek publicystyczny: model polskich uniwersytetów, poziom historiografii, godło, rola grunwaldzkiej wiktorii w dziejach Słowiańszczyzny, państwowej przynależności Morskiego Oka, zbiorów raperswilskich"
       },
       {
         "q": "Ile lat miał Theodor Mommsen kiedy został opublikowany ten kontrowersyjny referat?",
@@ -251,11 +251,11 @@ export const data = [
       },
       {
         "q": "W jakim roku karakalla nadał obywatelstwo w Rzymie?",
-        "a": "- 212 rok n.e"
+        "a": "- 212 rok n.e."
       },
       {
         "q": "Imiona rodziców karakalli",
-        "a": "- Septymiusz Sewer ( libijczyk) i Julia Domna ( syryjka)"
+        "a": "- Septymiusz Sewer (libijczyk) i Julia Domna (syryjka)"
       },
       {
         "q": "Imię żony karakalli",
@@ -263,15 +263,15 @@ export const data = [
       },
       {
         "q": "Kiedy się urodził i kiedy zmarł karakalla?",
-        "a": "- Urodził się 04.04.188r. n.e\n- Zmarl 08.04.217r. n.e ( Zabity podczas podróży z Edessy na wojnę)"
+        "a": "- Urodził się 04.04.188 r. n.e.\n- Zmarl 08.04.217 r. n.e. (Zabity podczas podróży z Edessy na wojnę)"
       },
       {
         "q": "Kto nadał obywatelstwo peregrini dediticii?",
-        "a": "- Cesarz Justynian w 530 roku n.e"
+        "a": "- Cesarz Justynian w 530 roku n.e."
       },
       {
         "q": "Powody wykluczenia peregrynów z nadania obywatelstwa",
-        "a": "- Cesarz w obliczu zobowiązań wobec wojska, niedoboru w skarbcu i dewaluacji pieniądza musiał znaleźć dodatkowe źródła dochodu. Płacić mogli tylko ci którzy byli w stanie to robić, dlatego dediticii jako warstwa najuboższa nie mogli być taką siłą polityczną, nie byli w stanie opłacać podatku od wyzwoleń czy spadków powyżej 100 tysięcy sesterców. Dlatego też zostali wyłączeni z ogólnego obywatelstwa."
+        "a": "Cesarz w obliczu zobowiązań wobec wojska, niedoboru w skarbcu i dewaluacji pieniądza musiał znaleźć dodatkowe źródła dochodu. Płacić mogli tylko ci, którzy byli w stanie to robić. Dlatego dediticii, jako warstwa najuboższa nie mogli być taką siłą polityczną (nie byliby w stanie opłacać podatku od wyzwoleń czy spadków powyżej stu tysięcy sesterców), toteż zostali wyłączeni z ogólnego obywatelstwa. Peregrini dediticii podlegali tributum capitis (daninę od osoby). Udzielenie im prawa obywatelstwa równałoby się z pozbawieniem skarbu dochodów pochodzących z tributum."
       },
       {
         "q": "Dzięki jakiemu edyktowi, jakiej konstytucji prawnie wszyscy mieszkańcy cesarstwa otrzymali obywatelstwo?",
@@ -279,7 +279,7 @@ export const data = [
       },
       {
         "q": "Kiedy i Gdzie odnaleziono papirus Gissensis 40?",
-        "a": "1902 r. - Aszmunejn(Egipt), opublikowany przez Paula Meyera w 1910r."
+        "a": "1902 r. - Aszmunejn (Egipt), opublikowany przez Paula Meyera w 1910 r."
       }
     ]
   },
@@ -292,11 +292,11 @@ export const data = [
       },
       {
         "q": "Opisz sprzedaż niewolników w świetle edyktu de mancipiis vendundis",
-        "a": "- Społeczeństwo niewolnicze było bardzo zróżnicowane dlatego obowiązywała w nim pewna hierarchia niewolników przeznaczonych na sprzedaż. Około I wieku pne edyle kurulni Stworzyli elementarny edykt de mancipiis vendundis, w którym ogłosili katalog typowych wad niewolników. Katalog ten zawierał nie tylko choroby ale także pewne właściwości charakteru jak na przykład skłonność niewolnika do ucieczek czy włóczęgostwa. Sprzedawca był zobowiązany do poddania potencjalnemu kupcowi wad wyliczonych w edykcie, a jeśli tego nie zrobił to ponosił odpowiedzialność. To w edykcie edylów kurulnych po raz pierwszy pojawiła się odpowiedzialność sprzedawcy za ukryte wady fizyczne niezależnie od jego świadomości, pod warunkiem że kontrakt kupna-sprzedaży został zawarty na targowisku, a dana wada jest wyraźnie wymieniona w edykcie."
+        "a": "Społeczeństwo niewolnicze było bardzo zróżnicowane, dlatego obowiązywała w nim oczywiście pewna hierarchia. Niewolników przeznaczonych na sprzedaż ustawiano na specjalnych podwyższeniach, aby w tym czasie sprzedawca mógł zachwalać swoje towary. Przed zakupem niewolnika poddawano go różnorodnym testom, sprawdzano np. uzębienie, ciało, stan zdrowia, czy pochodzenie. Niewolników z przeszłością przestępczą zakuwano w kajdany. Sprzedawcami byli głównie peregrynie - handlarze napływający do Rzymu z różnych krajów, najczęściej z Grecji i słynący z wątpliwej uczciwości i moralności. Dopuszczali się wszelkiego rodzaju oszustw m.in. sprzedając chorych i ułomnych niewolników jako silnych i zdrowych. W I w. p.n.e. powstał elementarny edykt - De mancipiis vendundis, w którym ogłoszono katalog typowych wad niewolnika. Zawierał on nie tylko opisy chorób, ale także pewne właściwości charakteru np. skłonność do ucieczek czy włóczęgostwa. To w tym akcie po raz pierwszy wprowadzono odpowiedzialność sprzedawcy za wady ukryte niewolnika, niezależnie od tego czy był ich świadom czy nie. Przepisy te miały zagwarantować prawidłowy przebieg sprzedaży rynkowej, miały też hamować nadmierny materializm sprzedawców oraz sprzyjać rozwojowi nowych idei prawnych."
       },
       {
         "q": "Z którego roku pochodzi edykt o sprzedaży niewolników?",
-        "a": "- I wiek pne"
+        "a": "- I wiek p.n.e."
       },
       {
         "q": "Jakie kryteria zaproponował ulpian Przy wycenie niewolnika?",
@@ -312,7 +312,7 @@ export const data = [
       },
       {
         "q": "Kto był najczęstszym obiektem sprzedaży",
-        "a": "- peregrini - najczęściej byli sprzedawcami, a obiektem??"
+        "a": "- Peregrini - najczęściej byli sprzedawcami, a obiektem??"
       },
       {
         "q": "w którym wieku edylowie kurulni stworzyli edykt De mancipiis vendundis z katalogiem wad niewolników?",
@@ -333,7 +333,7 @@ export const data = [
     "questions": [
       {
         "q": "Który cesarz i kiedy postanowił aby oskarżeni nie mogli być przetrzymywani w ciemnicy lecz mieli zapewnione korzystanie ze światła dziennego?",
-        "a": "- Konstantyn Wielki, 320r."
+        "a": "- Konstantyn Wielki, 320 r."
       },
       {
         "q": "Konstytucja jakiego cesarza i z którego roku stanowiła aby osadzenie więzieniu Mężczyźni i kobiety przebywał w osobnych pomieszczeniach?",
@@ -341,7 +341,7 @@ export const data = [
       },
       {
         "q": "Które cesarzowa tak przetrzymywała 4 miesiące więźnia że doświadczył obłędu?",
-        "a": "- cesarzowa Teodora, przetrzymywała więźnia senatora Teodosiusa"
+        "a": "- Cesarzowa Teodora, przetrzymywała więźnia senatora Teodosiusa"
       },
       {
         "q": "Którzy cesarze wydali regulację dotyczące warunków w więzieniach?",
@@ -349,11 +349,11 @@ export const data = [
       },
       {
         "q": "Jakie regulacje dotyczyły więźniów?",
-        "a": "- 314 Konstantyn Wielki - zabrania przetrzymywania osadzonych w procesach prywatnych którzy wnieśli apelację\n- 320 Konstantyn Wielki - humanitarne traktowanie więźniów, szybkie śledztwo, szybki proces, nie nakładanie Kajdan tylko łańcuchy, nie można przetrzymywać w ciemnicy, noc w zdrowych zewnętrznych pomieszczeniach, Szczególne odpowiedzialność została nałożona na sędziów i strażników, za przetrzymywanie w złych warunkach lub doprowadzenie do śmierci więźnia groziły surowe kary włącznie z karą główną dla przełożonych więzienia\n- 326 Konstantyn Wielki - oskarżony przebywający w więzieniu powinien być ponownie protokolarnie przesłuchany\n- 380 Konstytucje Gracjana, walentyniana i teodozjusza - zabraniają nakładania więźniom Kajdan, Jeżeli nie są skazani, Obowiązek sporządzenia co 30 dni rejestrów więźniów, Żądano szybkiego rozpoznania spraw\n- 419 - Prawo wchodzenia biskupów do Więzień celem dokonywania dzieła miłosierdzia\n- 451 Walentynian III - nowela o humanitarnym traktowaniu\n- 529 Justynian - zakaz więzień prywatnych, Regularne wizyty biskupów, prowadzono maksymalny okres przetrzymywania"
+        "a": "314 - Konstantyn Wielki - zabrania przetrzymywania osądzonych w procesach prywatnych, którzy wnieśli apelację\n320 - Konstantyn Wielki - humanitarne traktowanie więźniów: szybkie śledztwo, szybki proces, nie nakładanie kajdan, tylko łańcuchy, bez tortur, brak możliwości ucieczki. Nie można przetrzymywać w ciemnicy, noc w zdrowych, zewnętrznych pomieszczeniach. Sędzia poniesie karę, gdy strażnik dopuści się zaniedbań: głodzenie, przetrzymywanie\n326 - Konstantyn Wielki - oskarżony przebywający w więzieniu powinien być ponownie protokólarnie przesłuchany\n380 - Konstytucje Gracjana, Walentyniana i Teodozjusza - zabraniają nakładania więźniom kajdan, jeżeli nie są skazani; rejestrator musi sporządzać listę więźniów z wiekiem, rodzajem popełnionego przestępstwa, kolejność uwięzienia co 30 dni - dla namiestnika i strażnika kara wygnania, konfiskaty i grzywny\n409 - Konstytucja Honoriusza i Teodozjusza III - sędziowie w każdą niedzielę przeprowadzają przegląd i przesłuchanie doprowadzonych z więzienia, dostarczanie żywności dla tych, którzy jej nie mają\n419 - prawo wchodzenia biskupów do więzień celem dokonywania dzieła miłosierdzia\n451 - Walentynian III - nowela o humanitarnym traktowaniu\n529 - Justynian - zakaz więzień prywatnych; 4 lub 6 dni wizytacja biskupów, 30 dni do rozpatrzenia sprawy ewentualnie przysięga, że się nie oddali; max 6 miesięcy poręczenia za rozpatrzenie sprawy, wyjątkiem z urzędu na śmierć"
       },
       {
         "q": "Jak się nazywał retor który pisał o złej sytuacji w więzieniach w okresie dominatu",
-        "a": "Libanios(Libaniusz) - do Teodozjusza Wielkiego(namiestnicy to mordercy i nikczemnicy, w więzieniu osadzeni są oskarżeni dający wiele poręczeń majątkowych, bezpodstawnie oskarżonych przez bogatych i możnych."
+        "a": "Libanios (Libaniusz) - do Teodozjusza Wielkiego (namiestnicy to mordercy i nikczemnicy, w więzieniu osadzeni są oskarżeni dający wiele poręczeń majątkowych, bezpodstawnie oskarżonych przez bogatych i możnych."
       }
     ]
   },
@@ -366,7 +366,7 @@ export const data = [
       },
       {
         "q": "Jaka była treść Konstytucji cesarskiej z około 211 roku w sprawie przerywanie ciąży? / Opisać konstytucję karakali i Sewera o aborcji",
-        "a": "- Kobieta zamężna lub tuż po rozwodzie dopuszczająca się podstępnie poronienia wbrew woli męża powinna być przez namiestnika prowincji pokarana czasowym wygnaniem. Ale znów podstawą tej sankcji nie było dobro i życie nienarodzonego, ale naruszenie godności i władzy ojca oraz jego prawa do potomstwa."
+        "a": "Kobieta zamężna lub tuż po rozwodzie dopuszczająca się podstępnie poronienia wbrew woli męża powinna być przez namiestnika prowincji ukarana czasowym wygnaniem. Ale znów podstawą tej sankcji było nie dobro i życie nienarodzonego, ale naruszenie godności i władzy ojca oraz jego prawa do potomstwa. Rozmyślne, sztuczne poronienie przestało być już rzeczą prywatną, ale stało się czynem ściganym karnie przez państwo."
       },
       {
         "q": "Konstantyn Wielki w 331 roku Prezentując podstawy do rozwodów wymienił wśród nich sztuczne poronienie czy też nie wymienił?",
@@ -378,7 +378,7 @@ export const data = [
       },
       {
         "q": "W którym roku septymiusz sewer i karakalla wydali ustawę zakazującą aborcji?",
-        "a": "- 198-211 r. n.e"
+        "a": "- 198-211 r. n.e."
       },
       {
         "q": "Kto w II wieku n.e powiedział że poronienie jest zabójstwem?",
@@ -403,7 +403,7 @@ export const data = [
       },
       {
         "q": "Co oznaczało plena pubertas?",
-        "a": "- plena pubertas oznaczało że przy adopcji musiała istnieć różnica wieku minimum 18 lat (czyli plena pubertas). Można także nadmienić że to pełna dojrzałość, to znaczy nie tylko fizyczna (którą chłopiec osiągał w wieku 14 lat) ale także psychiczna. Jest to zarazem pełna dojrzałość płciowa i psychiczna, jej granica to 18 lat w sytuacji adopcji."
+        "a": "Plena pubertas oznaczało że przy adopcji musiała istnieć różnica wieku minimum 18 lat (czyli plena pubertas). Można także nadmienić że to pełna dojrzałość, to znaczy nie tylko fizyczna (którą chłopiec osiągał w wieku 14 lat) ale także psychiczna. Jest to zarazem pełna dojrzałość płciowa i psychiczna, jej granica to 18 lat w sytuacji adopcji."
       },
       {
         "q": "Jakie było stanowisko prawa rzymskiego przysposobienia starszego przez młodszego. Podaj przykłady różnych stanowisk?",
@@ -427,7 +427,7 @@ export const data = [
       },
       {
         "q": "Porównać arogację i adopcje",
-        "a": "- Arogacja (adrogatio) - przyjęcie pod władzę ojcowską adoptującego, dojrzałego mężczyzny sui iuris (osoby nie podlegającej niczyjej władzy w rodzinie) i połączenie dwóch rodzin agnatycznych.Był to akt o charakterze publicznym zatwierdzony przez Zgromadzenie ludowe ze względu na poważne skutki dla rodziny i rodu.\n- Adopcja właściwa ( adoptio sensu stricto) - był to rodzaj adopcji bardzo zbliżony do teraźniejszej. Przysposabiano osoby alieni iuris (osoby poddane czyjejś władzy w rodzinie) bez ograniczenia wieku i płci, co czyniło ten rodzaj bardziej zbliżonym do obecnej adopcji. Dokonywano go poprzez formalne czynności prawne przy udziale pretora (urzędnika republikańskiego którego główną funkcją było sprawowanie władzy sądowniczej)"
+        "a": "- Arogacja (adrogatio) - przyjęcie pod władzę ojcowską adoptującego, dojrzałego mężczyzny sui iuris (osoby nie podlegającej niczyjej władzy w rodzinie) i połączenie dwóch rodzin agnatycznych.Był to akt o charakterze publicznym zatwierdzony przez Zgromadzenie ludowe ze względu na poważne skutki dla rodziny i rodu.\n- Adopcja właściwa (adoptio sensu stricto) - był to rodzaj adopcji bardzo zbliżony do teraźniejszej. Przysposabiano osoby alieni iuris (osoby poddane czyjejś władzy w rodzinie) bez ograniczenia wieku i płci, co czyniło ten rodzaj bardziej zbliżonym do obecnej adopcji. Dokonywano go poprzez formalne czynności prawne przy udziale pretora (urzędnika republikańskiego którego główną funkcją było sprawowanie władzy sądowniczej)"
       },
       {
         "q": "Kto z Polaków poruszył kwestię adoptio naturam imitatur?",
@@ -455,7 +455,7 @@ export const data = [
       },
       {
         "q": "Czy było możliwe w Rzymie, żeby młodszy przysposobił starszego?",
-        "a": "tak, w Rzymie możliwość taka była początkowo tolerowana."
+        "a": "Tak, w Rzymie możliwość taka była początkowo tolerowana."
       },
       {
         "q": "Dzięki komu wiemy, że zdarzały się przypadki przysposobienia starszego przez młodszego?",
@@ -472,7 +472,7 @@ export const data = [
     "questions": [
       {
         "q": "Jakie były skutki Ustaw wojny ze sprzymierzeńcami?",
-        "a": "- Ustawa wojny ze sprzymierzeńcami nadawała obywatelstwa sprzymierzeńcom nie przyłączającym się do Powstańców, dlatego w 89 roku pne wszyscy mieszkańcy Italii otrzymali obywatelstwo, przez to walki stopniowo zanikały."
+        "a": "- Ustawa wojny ze sprzymierzeńcami nadawała obywatelstwa sprzymierzeńcom nie przyłączającym się do Powstańców, dlatego w 89 roku p.n.e. wszyscy mieszkańcy Italii otrzymali obywatelstwo, przez to walki stopniowo zanikały."
       },
       {
         "q": "Który cesarz nadał obywatelstwo mieszkańcom Volubilis i w jakim kraju dzisiaj znajduje się to miasto?",
@@ -484,12 +484,47 @@ export const data = [
       },
       {
         "q": "W wyniku jakiej wojny wielu mieszkańców Italii otrzymało obywatelstwo rzymskie w I w p.n.e.?",
-        "a": "w wyniku wojny ze sprzymierzeńcami, to były takie ustawy od lat 90 do 99 przed Chrystusem."
+        "a": "W wyniku wojny ze sprzymierzeńcami, to były takie ustawy od lat 90 do 99 przed Chrystusem."
       },
       {
         "q": "Jaka ustawa, z którego roku ułatwiała otrzymanie obywatelstwa rzymskiego?",
-        "a": "Lex Acilia z 123/2 pne – przewidywała nagrodę dla perygrynów, którzy skuteczne przeprowadzili oskarżenie urzędnika\njesienią 90r. p.n.e. uchwalono Lex Iulia de civitate Latinis et sociis danda – nadawała obywatelstwo wszystkim wiernym sprzymierzeńcom, który nie przyłączyli się do powstańców. Ale było to mało.\n89r. p.n.e. uchwalono ustawę Lex Plautia Papiria – otwierała drogę do obywatelstwa wszystkim mieszkańcom (dokładnie tym, którzy złożą broń w ciągu 60dni)."
+        "a": "Lex Acilia z 123/2 p.n.e. – przewidywała nagrodę dla perygrynów, którzy skuteczne przeprowadzili oskarżenie urzędnika\njesienią 90 r. p.n.e. uchwalono Lex Iulia de civitate Latinis et sociis danda – nadawała obywatelstwo wszystkim wiernym sprzymierzeńcom, który nie przyłączyli się do powstańców. Ale było to mało.\n89 r. p.n.e. uchwalono ustawę Lex Plautia Papiria – otwierała drogę do obywatelstwa wszystkim mieszkańcom (dokładnie tym, którzy złożą broń w ciągu 60 dni)."
       }
     ]
+  }
+];
+
+export const theory = [
+  {
+    "topic": "Związki Theodora Mommsena z Wrocławiem",
+    "content": "Theodor Mommsen (Garding 1817 - Charlottenburg 1903) to niemiecki historyk i prawnik, jedyny przedstawiciel nauk historycznoprawnych z literacką Nagrodą Nobla (1902, za „Historię Rzymu”). Studiował prawo w Kilonii (1838-1843), a w latach 1844-1847 odbył stypendium we Włoszech (Instytut Archeologiczny w Rzymie), gdzie zrodził się projekt Corpus Inscriptionum Latinarum. Profesurę w Lipsku stracił za udział w Wiośnie Ludów. We Wrocławiu wykładał prawo rzymskie w latach 1854-1858 - to tu kontynuował i wydał kolejne tomy „Historii Rzymu”. Wrocław traktował jako etap przejściowy w drodze do Berlina. Był liberałem opowiadającym się za zjednoczeniem Niemiec i prezentował negatywny stosunek do Słowian i Polaków."
+  },
+  {
+    "topic": "Spory wokół dziejowej roli Słowian (Balzer vs Mommsen)",
+    "content": "31 października 1897 r. w wiedeńskim dzienniku „Neue Freie Presse” ukazał się anonimowy list Mommsena „do Niemców w Austrii”. Tłem były rozporządzenia językowe Badeniego, zrównujące czeski z niemieckim. 80-letni Mommsen nazwał Słowian „apostołami barbarzyństwa”, którzy chcą pogrzebać dzieło 500-letniej pracy Niemców. Odpowiedział mu polski uczony i historyk prawa Oswald Balzer (1858-1933, profesor Uniwersytetu Lwowskiego), który 20 listopada 1897 r. na łamach „Słowa Polskiego” bronił kultury Słowian. Komentator krakowskiego „Czasu” nazwał Mommsena „spadkobiercą krzyżactwa”."
+  },
+  {
+    "topic": "Constitutio Antoniniana. Przyczyny wydania edyktu Karakalli (212 r.)",
+    "content": "Constitutio Antoniniana to edykt cesarza Karakalli z 212 r. n.e., który nadał obywatelstwo rzymskie niemal wszystkim wolnym mieszkańcom Imperium - poza edyktem pozostali peregrini dediticii (oraz peregrini certae civitatis). O edykcie wiemy głównie dzięki Kasjuszowi Dionowi i Ulpianowi, a potwierdza go papirus Gissensis 40. Powody jego wydania to motyw proceduralno-administracyjny, asymilacja ludności, motyw religijny oraz podłoże fiskalne (niedobory w skarbcu, dewaluacja pieniądza, zobowiązania wobec wojska). Karakalla - syn Septymiusza Sewera i Julii Domny, brat Gety - urodził się w Lugdunum (Lyon). Pełne obywatelstwo wykluczonym dediticii nadał dopiero Justynian w 530 r."
+  },
+  {
+    "topic": "Sprzedaż niewolników (edykt De mancipiis vendundis)",
+    "content": "Sprzedaż niewolników na targowiskach nadzorowali edylowie kurulni. W I w. p.n.e. wydali oni edykt De mancipiis vendundis, ogłaszający katalog typowych wad niewolnika - nie tylko chorób, ale i cech charakteru (np. skłonność do ucieczek czy włóczęgostwa). To w tym akcie po raz pierwszy pojawiła się odpowiedzialność sprzedawcy za wady ukryte, niezależnie od jego świadomości, pod warunkiem zawarcia umowy na targowisku. Sprzedawcami byli głównie peregryni, najczęściej z Grecji, którzy dopuszczali się oszustw. Za czasów Gaiusa edykt rozszerzono także na sprzedaż gruntów, zbywanie majątku nieletnich i handel poza targowiskiem. Kryteria wyceny (wg Ulpiana): narodowość, wiek, wykształcenie i cechy fizyczne; ceny wahały się od 200 do 700 000 sesterców."
+  },
+  {
+    "topic": "Traktowanie więźniów w konstytucjach cesarskich z okresu dominatu",
+    "content": "W okresie dominatu cesarze stopniowo wprowadzali humanitarne regulacje dotyczące więźniów. Konstantyn Wielki: 314 (zakaz przetrzymywania w procesach prywatnych po apelacji), 320 (światło dzienne zamiast ciemnicy, łańcuchy zamiast kajdan, szybki proces) i 326 (ponowne przesłuchanie osadzonego). Konstancjusz (340) nakazał osobne pomieszczenia dla mężczyzn i kobiet. Gracjan, Walentynian i Teodozjusz (380) - rejestry więźniów co 30 dni. Honoriusz (409) - cotygodniowe przeglądy; od 419 r. prawo wstępu do więzień dla biskupów. Justynian (529) zakazał więzień prywatnych. O złych warunkach pisał retor Libaniusz, a cesarzowa Teodora przetrzymywała senatora Teodosiusa."
+  },
+  {
+    "topic": "Prawo rzymskie wobec aborcji",
+    "content": "Początkowo prawo rzymskie nie chroniło płodu. Septymiusz Sewer i Karakalla wydali w latach 198-211 reskrypt, zgodnie z którym kobieta usuwająca ciążę wbrew woli męża podlegała czasowemu wygnaniu - podstawą sankcji nie było jednak życie nienarodzonego, lecz naruszenie prawa ojca do potomstwa. Konstantyn Wielki (331) i Teodozjusz II (449) przy podstawach rozwodu pominęli kwestię sztucznego poronienia. Już lex Cornelia z 81 r. p.n.e. (prawo przeciw mordom z czasów Augusta) zaczęto z czasem stosować wobec wytwarzających środki aborcyjne. Chrześcijańscy cesarze wiedzieli, że umyślne przerwanie ciąży jest przestępstwem, lecz prawo długo powielało dawne formuły."
+  },
+  {
+    "topic": "Zasada 'adoptio naturam imitatur' (Adopcja naśladuje naturę)",
+    "content": "Paremia „adoptio naturam imitatur” (adopcja naśladuje naturę) pochodzi od Cycerona - przysposobienie powinno wzorować się na naturalnym stosunku ojcostwa. Wymagana różnica wieku między adoptującym a adoptowanym wynosiła 18 lat (plena pubertas), co wyznaczył Modestyn. Kompilatorzy justyniańscy uznawali adopcję starszego przez młodszego za sprzeczną z naturą, choć w czasach Republiki była początkowo tolerowana (np. arogacja Klodiusza Pulchra, starszego od Publiusza Fonteiusza). Rozróżniano arogację (adrogatio - osoby sui iuris, decyzją zgromadzenia ludowego) i adopcję właściwą (alieni iuris, przy udziale pretora). Zakaz adopcji przez kastratów i niewolników zniósł Leon Filozof."
+  },
+  {
+    "topic": "Nadawanie obywatelstwa rzymskiego",
+    "content": "Nadawanie obywatelstwa rzymskiego było procesem stopniowym. Kolejne ustawy ułatwiały jego uzyskanie: Lex Acilia (123/2 p.n.e.), Lex Iulia de civitate (90 p.n.e.) i Lex Plautia Papiria (89 p.n.e.). W wyniku wojny ze sprzymierzeńcami w 89 r. p.n.e. obywatelstwo otrzymali wszyscy mieszkańcy Italii. Obywatelstwo nadawano też prowincjom - cesarz Klaudiusz nadał je mieszkańcom Volubilis (dziś w Maroku). Zwieńczeniem procesu była Constitutio Antoniniana - edykt Karakalli z 212 r., który objął niemal wszystkich wolnych mieszkańców Imperium, dążąc do integracji społeczeństwa, zwiększenia obronności i poboru podatków od większej liczby ludzi."
   }
 ];

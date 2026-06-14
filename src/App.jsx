@@ -1,5 +1,5 @@
 import { useState, useMemo, useEffect, useCallback } from 'react';
-import { data } from './data';
+import { data, theory } from './data';
 import './index.css';
 
 const shuffle = (arr) => {
@@ -13,6 +13,8 @@ const shuffle = (arr) => {
 
 function App() {
   const [view, setView] = useState('home');
+  const [expandedTheory, setExpandedTheory] = useState(null);
+  const toggleTheory = (index) => setExpandedTheory(expandedTheory === index ? null : index);
 
   // Flashcards (deck-based, simple)
   const [deck, setDeck] = useState([]);
@@ -125,6 +127,10 @@ function App() {
               <div className="icon-wrapper">⚡</div>
               <h2>Plan 3h</h2>
             </div>
+            <div className="menu-card small-card" onClick={() => setView('theory')}>
+              <div className="icon-wrapper">📜</div>
+              <h2>Streszczenia</h2>
+            </div>
             <div className="menu-card small-card" onClick={() => setView('list-all')}>
               <div className="icon-wrapper">📋</div>
               <h2>Wszystkie Pytania</h2>
@@ -172,6 +178,35 @@ function App() {
           </div>
           <div className="plan-tip">
             <strong>💡 Mnemoniki:</strong> Karakalla → <b>212</b> obywatelstwo, ojciec <b>Septymiusz Sewer</b> + matka <b>Julia Domna</b>, brat <b>Geta</b>. Więźniowie → <b>320</b> Konstantyn (światło dzienne), <b>340</b> Konstancjusz (M/K osobno), <b>529</b> Justynian (koniec więzień prywatnych). Adopcja → <b>18 lat</b> różnicy = <i>plena pubertas</i>, słowa <b>Cycerona</b>. Aborcja → reskrypt <b>198–211</b> Sewer + Karakalla (chodziło o prawo OJCA). Obywatelstwo Italii → <b>89 p.n.e.</b> → szczyt: <b>212</b> Constitutio Antoniniana.
+          </div>
+        </main>
+      )}
+
+      {view === 'theory' && (
+        <main className="theory-view">
+          <button className="back-btn" onClick={() => setView('home')}>← Wróć do menu</button>
+          <div className="view-header">
+            <h2>📜 Streszczenia Referatów</h2>
+            <p>Po jednym na każdy z 8 referatów — oparte wyłącznie na faktach z bazy i materiałów referatów.</p>
+          </div>
+          <div className="theory-list">
+            {theory.map((item, index) => (
+              <div
+                key={index}
+                className={`theory-card ${expandedTheory === index ? 'expanded' : ''}`}
+                onClick={() => toggleTheory(index)}
+              >
+                <div className="theory-card-header">
+                  <h3>{item.topic}</h3>
+                  <span className="toggle-icon">{expandedTheory === index ? '−' : '+'}</span>
+                </div>
+                {expandedTheory === index && (
+                  <div className="theory-content">
+                    <p>{item.content}</p>
+                  </div>
+                )}
+              </div>
+            ))}
           </div>
         </main>
       )}
