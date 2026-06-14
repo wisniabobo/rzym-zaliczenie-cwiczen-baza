@@ -157,11 +157,11 @@ export const data = [
       },
       {
         "q": "Gdzie studiował prawo Mommsen?",
-        "a": "- W Kilonii studiował na wydziale prawa rzymskiego."
+        "a": "W Kilonii studiował na wydziale prawa rzymskiego."
       },
       {
         "q": "Jakimi działami rzymskiego prawa zajmował się Mommsen?",
-        "a": "- Zajmował się rzymskim prawem publicznym oraz rzymskim prawem karnym."
+        "a": "Zajmował się rzymskim prawem publicznym oraz rzymskim prawem karnym."
       }
     ]
   },
@@ -275,11 +275,11 @@ export const data = [
       },
       {
         "q": "Dzięki jakiemu edyktowi, jakiej konstytucji prawnie wszyscy mieszkańcy cesarstwa otrzymali obywatelstwo?",
-        "a": "- Edykt Karakalli – Constitutio Antoniniana"
+        "a": "Edykt Karakalli – Constitutio Antoniniana"
       },
       {
-        "q": "Kiedy i gdzie odnaleziono papirus Gissensis 40?",
-        "a": "- 1902 r. - Aszmunejn (Egipt), opublikowany przez Paula Meyera w 1910r."
+        "q": "Kiedy i Gdzie odnaleziono papirus Gissensis 40?",
+        "a": "1902 r. - Aszmunejn(Egipt), opublikowany przez Paula Meyera w 1910r."
       }
     ]
   },
@@ -315,16 +315,16 @@ export const data = [
         "a": "- peregrini - najczęściej byli sprzedawcami, a obiektem??"
       },
       {
-        "q": "W którym wieku edylowie kurulni stworzyli edykt De mancipiis vendundis z katalogiem wad niewolników?",
-        "a": "- Edylowie kurulni stworzyli edykt De mancipiis vendundis z katalogiem wad niewolników w I wieku p.n.e."
+        "q": "w którym wieku edylowie kurulni stworzyli edykt De mancipiis vendundis z katalogiem wad niewolników?",
+        "a": "Edylowie kurulni stworzyli edykt De mancipiis vendundis z katalogiem wad niewolników w I wieku p.n.e."
       },
       {
-        "q": "Katalog jakich wad zawierał edykt De mancipiis vendundis?",
-        "a": "- Ten edykt zawierał wady takie jak choroby i defekty cielesne, wady umysłu, negatywne cechy charakteru, karalność i narodowość."
+        "q": "katalog jakich wad zawierał edykt De mancipiis vendundis?",
+        "a": "Ten edykt zawierał wady takie jak choroby i defekty cielesne, wady umysłu, negatywne cechy charakteru, karalność i narodowość."
       },
       {
-        "q": "Czego pierwotnie dotyczył edykt De mancipiis vendundis, a czego także w czasach Gaiusa?",
-        "a": "- Ten edykt początkowo dotyczył sprzedaży niewolników, które odbywały się na targowiskach. Natomiast za czasów Gaiusa edykt ten dotyczył również sprzedaży gruntów, zbywania majątku nieletnich, a także handlu niewolnikami poza targowiskami."
+        "q": "czego pierwotnie dotyczył edykt De mancipiis vendundis, a czego także w czasach Gaiusa?",
+        "a": "Ten edykt początkowo dotyczył sprzedaży niewolników, które odbywały się na targowiskach. Natomiast za czasów Gaiusa edykt ten dotyczył również sprzedaży gruntów, zbywania majątku nieletnich, a także handlu niewolnikami poza targowiskami."
       }
     ]
   },
@@ -352,8 +352,8 @@ export const data = [
         "a": "- 314 Konstantyn Wielki - zabrania przetrzymywania osadzonych w procesach prywatnych którzy wnieśli apelację\n- 320 Konstantyn Wielki - humanitarne traktowanie więźniów, szybkie śledztwo, szybki proces, nie nakładanie Kajdan tylko łańcuchy, nie można przetrzymywać w ciemnicy, noc w zdrowych zewnętrznych pomieszczeniach, Szczególne odpowiedzialność została nałożona na sędziów i strażników, za przetrzymywanie w złych warunkach lub doprowadzenie do śmierci więźnia groziły surowe kary włącznie z karą główną dla przełożonych więzienia\n- 326 Konstantyn Wielki - oskarżony przebywający w więzieniu powinien być ponownie protokolarnie przesłuchany\n- 380 Konstytucje Gracjana, walentyniana i teodozjusza - zabraniają nakładania więźniom Kajdan, Jeżeli nie są skazani, Obowiązek sporządzenia co 30 dni rejestrów więźniów, Żądano szybkiego rozpoznania spraw\n- 419 - Prawo wchodzenia biskupów do Więzień celem dokonywania dzieła miłosierdzia\n- 451 Walentynian III - nowela o humanitarnym traktowaniu\n- 529 Justynian - zakaz więzień prywatnych, Regularne wizyty biskupów, prowadzono maksymalny okres przetrzymywania"
       },
       {
-        "q": "Jak się nazywał retor, który pisał o złej sytuacji w więzieniach w okresie dominatu?",
-        "a": "- Libanios (Libaniusz) - do Teodozjusza Wielkiego (namiestnicy to mordercy i nikczemnicy, w więzieniu osadzeni są oskarżeni dający wiele poręczeń majątkowych, bezpodstawnie oskarżonych przez bogatych i możnych."
+        "q": "Jak się nazywał retor który pisał o złej sytuacji w więzieniach w okresie dominatu",
+        "a": "Libanios(Libaniusz) - do Teodozjusza Wielkiego(namiestnicy to mordercy i nikczemnicy, w więzieniu osadzeni są oskarżeni dający wiele poręczeń majątkowych, bezpodstawnie oskarżonych przez bogatych i możnych."
       }
     ]
   },
@@ -455,15 +455,15 @@ export const data = [
       },
       {
         "q": "Czy było możliwe w Rzymie, żeby młodszy przysposobił starszego?",
-        "a": "- Tak, w Rzymie możliwość taka była początkowo tolerowana."
+        "a": "tak, w Rzymie możliwość taka była początkowo tolerowana."
       },
       {
         "q": "Dzięki komu wiemy, że zdarzały się przypadki przysposobienia starszego przez młodszego?",
-        "a": "- Cyceron opisywał przypadek arogacji P. Klodiusza Pulchra, starszego od arogującego go Publiusza Fonteiusza."
+        "a": "Cyceron opisywał przypadek arogacji P. Klodiusza Pulchra, starszego od arogującego go Publiusza Fonteiusza."
       },
       {
-        "q": "Dzięki komu wiemy o pojęciu plena pubertas?",
-        "a": "- Teofilus oraz Paulus"
+        "q": "Dzięki komu wiemy o pojęciu Plena pubertas?",
+        "a": "Teofilus oraz Paulus"
       }
     ]
   },
@@ -483,12 +483,12 @@ export const data = [
         "a": "- Dzieło karakalli opisuje powody, dzięki którym stworzono konstytucję. Konstytucja zawiera w sobie przepisy, w których stwierdza się nadanie obywatelstwa cudzoziemcom, którzy przebywają na terenie państwa rzymskiego. Zrównanie całej ludności Imperium pod kątem prawnym i religijnym miały skutkować integracją całego społeczeństwa, zwiększeniem obronności Imperium i pobieraniem podatków od większej ilości ludzi."
       },
       {
-        "q": "W wyniku jakiej wojny wielu mieszkańców Italii otrzymało obywatelstwo rzymskie w I w. p.n.e.?",
-        "a": "- W wyniku wojny ze sprzymierzeńcami, to były takie ustawy od lat 90 do 99 przed Chrystusem."
+        "q": "W wyniku jakiej wojny wielu mieszkańców Italii otrzymało obywatelstwo rzymskie w I w p.n.e.?",
+        "a": "w wyniku wojny ze sprzymierzeńcami, to były takie ustawy od lat 90 do 99 przed Chrystusem."
       },
       {
-        "q": "Jaka ustawa i z którego roku ułatwiała otrzymanie obywatelstwa rzymskiego?",
-        "a": "- Lex Acilia z 123/2 pne – przewidywała nagrodę dla perygrynów, którzy skuteczne przeprowadzili oskarżenie urzędnika\n- jesienią 90r. p.n.e. uchwalono Lex Iulia de civitate Latinis et sociis danda – nadawała obywatelstwo wszystkim wiernym sprzymierzeńcom, który nie przyłączyli się do powstańców. Ale było to mało.\n- 89r. p.n.e. uchwalono ustawę Lex Plautia Papiria – otwierała drogę do obywatelstwa wszystkim mieszkańcom (dokładnie tym, którzy złożą broń w ciągu 60dni)."
+        "q": "Jaka ustawa, z którego roku ułatwiała otrzymanie obywatelstwa rzymskiego?",
+        "a": "Lex Acilia z 123/2 pne – przewidywała nagrodę dla perygrynów, którzy skuteczne przeprowadzili oskarżenie urzędnika\njesienią 90r. p.n.e. uchwalono Lex Iulia de civitate Latinis et sociis danda – nadawała obywatelstwo wszystkim wiernym sprzymierzeńcom, który nie przyłączyli się do powstańców. Ale było to mało.\n89r. p.n.e. uchwalono ustawę Lex Plautia Papiria – otwierała drogę do obywatelstwa wszystkim mieszkańcom (dokładnie tym, którzy złożą broń w ciągu 60dni)."
       }
     ]
   }

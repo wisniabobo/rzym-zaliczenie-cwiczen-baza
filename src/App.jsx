@@ -168,33 +168,37 @@ function App() {
         <main className="theory-view">
           <button className="back-btn" onClick={() => setView('home')}>← Wróć do menu</button>
           <div className="view-header">
-            <h2>⚡ Plan nauki w 3 godziny (od zera)</h2>
-            <p>Egzamin: 5 pytań z bazy. Cel — odpowiedzieć na każde tak jak w bazie.</p>
+            <h2>⚡ Plan nauki w 3 godziny (od zera, bez quizu)</h2>
+            <p>Egzamin: 5 pytań z bazy. Metoda: aktywne przypominanie — mów/pisz odpowiedź Z PAMIĘCI, zanim sprawdzisz.</p>
           </div>
           <div className="plan-list">
             <div className="plan-step">
-              <span className="plan-time">0:00–0:20</span>
-              <div><strong>📜 Teoria — zrozum, o co chodzi.</strong> Przeczytaj 8 streszczeń referatów. Nie ucz się na pamięć — masz wiedzieć, że „Mommsen = noblista we Wrocławiu", „Karakalla = obywatelstwo dla wszystkich w 212 r." itd. To spina fakty w całość.</div>
+              <span className="plan-time">0:00–0:25</span>
+              <div><strong>📜 Teoria — zrozum, o co chodzi.</strong> Przeczytaj 8 streszczeń. Po każdym zamknij oczy i powiedz jednym zdaniem, o co chodzi w tym referacie. Nie kuj — buduj „szkielet", na który wskoczą fakty.</div>
             </div>
             <div className="plan-step">
-              <span className="plan-time">0:20–1:20</span>
-              <div><strong>📚 Fiszki temat po temacie (8 tematów).</strong> Spacja = obróć, → następne. Po każdej karcie wciśnij <b>Z (Umiem)</b> lub <b>X (Powtórz)</b>. Idź szybko, nie zatrzymuj się na trudnych.</div>
+              <span className="plan-time">0:25–1:25</span>
+              <div><strong>📚 Fiszki temat po temacie — aktywnie.</strong> Przeczytaj pytanie i <b>powiedz odpowiedź na głos ZANIM obrócisz kartę</b> (Spacja). Dopiero potem sprawdź. Trafione → <b>Z</b>, pudło → <b>X</b>. Bądź szczery — to czego nie powiesz z głowy, leci na X.</div>
             </div>
             <div className="plan-step">
-              <span className="plan-time">1:20–1:30</span>
-              <div><strong>☕ Przerwa.</strong> Krótki reset — mózg utrwala w tle.</div>
+              <span className="plan-time">1:25–1:35</span>
+              <div><strong>☕ Przerwa.</strong> Bez telefonu. Mózg utrwala w tle.</div>
             </div>
             <div className="plan-step">
-              <span className="plan-time">1:30–2:15</span>
-              <div><strong>🔁 Powtórka trudnych.</strong> W każdym temacie kliknij <b>„Powtórz trudne"</b> i przerabiaj tylko to, czego nie umiesz, aż lista zniknie. Dopisuj sobie mnemoniki do dat i imion.</div>
+              <span className="plan-time">1:35–2:25</span>
+              <div><strong>🔁 Powtórz trudne + zapisz.</strong> W każdym temacie klikaj <b>„Powtórz trudne"</b> aż lista zniknie. Daty/imiona, które nie wchodzą — <b>wypisz ręcznie na kartce</b> i zrób mnemonik (patrz niżej). Ręka pamięta.</div>
             </div>
             <div className="plan-step">
-              <span className="plan-time">2:15–3:00</span>
-              <div><strong>🎯 Quiz ABCD 2–3 razy</strong> (20–50 pytań). Powtarzaj aż wynik &gt; 80%. To buduje odruch rozpoznawania prawidłowej odpowiedzi.</div>
+              <span className="plan-time">2:25–2:50</span>
+              <div><strong>🧠 Recytacja z pamięci (najmocniejsze!).</strong> Zamknij apkę. Po kolei dla każdego z 8 tematów powiedz/wypisz z głowy wszystko, co pamiętasz. Potem otwórz „Wszystkie Pytania" i sprawdź dziury. Czego nie umiałeś → wróć na fiszki.</div>
+            </div>
+            <div className="plan-step">
+              <span className="plan-time">2:50–3:00</span>
+              <div><strong>✅ Ostatni rzut.</strong> Tylko karty, które wciąż kuleją, + przeczytaj raz mnemoniki. Idź spać / na egzamin pewny.</div>
             </div>
           </div>
           <div className="plan-tip">
-            <strong>💡 Tip na zapamiętywanie:</strong> daty i imiona wiąż w łańcuszki. Np. Karakalla: <b>212</b> (obywatelstwo) → ojciec <b>Septymiusz Sewer</b> + matka <b>Julia Domna</b> → brat <b>Geta</b>. Więźniowie: <b>3</b>2<b>0</b> Konstantyn (światło), <b>3</b>4<b>0</b> Konstancjusz (osobno M/K), <b>529</b> Justynian (koniec więzień prywatnych). Adopcja = <b>18 lat</b> różnicy (plena pubertas), słowa <b>Cycerona</b>.
+            <strong>💡 Mnemoniki (najczęstsze pytania):</strong> Karakalla → <b>212</b> obywatelstwo, ojciec <b>Septymiusz Sewer</b> + matka <b>Julia Domna</b>, brat <b>Geta</b>. Więźniowie → <b>320</b> Konstantyn (światło dzienne), <b>340</b> Konstancjusz (M/K osobno), <b>529</b> Justynian (koniec więzień prywatnych). Adopcja → <b>18 lat</b> różnicy = <i>plena pubertas</i>, słowa <b>Cycerona</b>. Aborcja → reskrypt <b>198–211</b> Sewer + Karakalla (chodziło o prawo OJCA, nie o płód). Obywatelstwo Italii → <b>89 p.n.e.</b> (wojna ze sprzymierzeńcami) → szczyt: <b>212</b> Constitutio Antoniniana.
           </div>
         </main>
       )}
