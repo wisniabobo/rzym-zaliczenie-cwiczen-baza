@@ -410,7 +410,7 @@
 
 ## Bez numeru referatu
 
-**1. Co wiesz o słynnym rzymskim pucharku?**
+**1. Gdzie znajduje się na stałe czarka znaleziona w Opolu/Gosławicach odnaleziona w I w. p.n.e. (Pucharek - czarka odnaleziona w Opolu w I w)?**
 
-*Odp:* Pucharek rzymski (np. Puchar Likurga) stanowił dowód niezwykłego kunsztu rzymskiego szklarstwa i rzemiosła, często wykorzystywanego jako cenny zastaw lub element majątku w sporach prawnych.
+*Odp:* Obecnie znajduje się w Muzeum Archeologicznym we Wrocławiu.
 

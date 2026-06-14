@@ -140,7 +140,7 @@ export const data = [
   {
     topic: "Bez numeru referatu",
     questions: [
-      { q: "Co wiesz o słynnym rzymskim pucharku?", a: "Pucharek rzymski (np. Puchar Likurga) stanowił dowód niezwykłego kunsztu rzymskiego szklarstwa i rzemiosła, często wykorzystywanego jako cenny zastaw lub element majątku w sporach prawnych." }
+      { q: "Gdzie znajduje się na stałe czarka znaleziona w Opolu/Gosławicach odnaleziona w I w. p.n.e. (Pucharek - czarka odnaleziona w Opolu w I w)?", a: "Obecnie znajduje się w Muzeum Archeologicznym we Wrocławiu." }
     ]
   }
 ];
