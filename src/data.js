@@ -3,36 +3,36 @@ export const data = [
     "topic": "Pytania z pierwszych zajęć (bez numeru referatu)",
     "questions": [
       {
-        "q": "Gdzie znajduje się na stałe czarka znaleziona w Opolu/Gosławicach odnaleziona w I w. p.n.e. (Pucharek - czarka odnaleziona w Opolu w I w)?",
-        "a": "Obecnie znajduje się w Muzeum Archeologicznym we Wrocławiu."
+        "q": "gdzie znajduje sie na stale czarka znaleziona w Opolu/Goslawicach odnaleziona w Iw. p.n.e.,",
+        "a": "Pucharek – czarka odnaleziona w Opolu (w I w ) obecnie znajduje się w Muzeum Archeologicznym we Wrocławiu"
       },
       {
-        "q": "Jak nazywają się ustawy przeciwko zbytkowi?",
-        "a": "Lex Oppia, Lex Orchia, Lex Fannia."
+        "q": "jak nazywają się ustawy przeciwko zbytkowi,",
+        "a": "Lex Oppia, Lex Orchia, Lex Fannia"
       },
       {
-        "q": "Wymień miasta związane z Libaniuszem.",
-        "a": "Konstantynopol, Antiochia, Bejrut, Ateny."
+        "q": "Wymien miasta zwiazane z Libaniuszem:",
+        "a": "konstantynopol, antiochia, bejrut, ateny"
       },
       {
-        "q": "Którzy cesarze sprzeciwiali się aborcji?",
-        "a": "Septymiusz Sewer, Antoniusz Karakalla, Justynian."
+        "q": "którzy cesarze sprzeciwiali sie aborcji:",
+        "a": "Septymiusz Sewr, Antoniusz Karakala, Justynian"
       },
       {
-        "q": "W którym roku według Tytusa w Rzymie był budynek 3-piętrowy?",
-        "a": "W 218 r. p.n.e. budynek wielopiętrowy w Rzymie."
+        "q": "w którym roku wg Tytusa jakiegos w rzymie byl budynek 3- pietrowy",
+        "a": "218 r p.n.e budynek wielopiętrowy w Rzymie"
       },
       {
-        "q": "Jak po łacinie jest obraza 2. strony albo sędziego?",
-        "a": "Maledictum lub convictum."
+        "q": "jak po lacinie jest obraza 2 strony albo sedziego",
+        "a": "Maledictum lub convictum"
       },
       {
-        "q": "Jacy władcy regulowali kastrowanie?",
-        "a": "Domicjan, Hadrian, Konstantyn, Nerwa, Leon, Justynian, ustawy Sulli."
+        "q": "jacy wladcy regulowali kastrowanie:",
+        "a": "Domicjan, Hadrian, Konstantyn, Nerw, Leon, Justynian, ustawy Sulli"
       },
       {
-        "q": "Który papież z XIII w. zakazał duchownym studiować prawo?",
-        "a": "Papież Honoriusz III w 1219 r. wydał Bullę Super Speculam, wprowadzając zakaz nauki prawa rzymskiego na Uniwersytecie Paryskim."
+        "q": "ktory papiez z XIII w. zakazal klechom studiowac prawo",
+        "a": "Papież Honoriusz III w 1219r. wydał – Bulla Super Speculam, wprowadzając zakaz nauki prawa rzymskiego na Uniwersytecie Paryskim"
       }
     ]
   },

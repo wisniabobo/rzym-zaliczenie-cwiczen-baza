@@ -2,37 +2,37 @@
 
 ## Pytania z pierwszych zajęć (bez numeru referatu)
 
-**1. Gdzie znajduje się na stałe czarka znaleziona w Opolu/Gosławicach odnaleziona w I w. p.n.e. (Pucharek - czarka odnaleziona w Opolu w I w)?**
+**1. gdzie znajduje sie na stale czarka znaleziona w Opolu/Goslawicach odnaleziona w Iw. p.n.e.,**
 
-*Odp:* Obecnie znajduje się w Muzeum Archeologicznym we Wrocławiu.
+*Odp:* Pucharek – czarka odnaleziona w Opolu (w I w ) obecnie znajduje się w Muzeum Archeologicznym we Wrocławiu
 
-**2. Jak nazywają się ustawy przeciwko zbytkowi?**
+**2. jak nazywają się ustawy przeciwko zbytkowi,**
 
-*Odp:* Lex Oppia, Lex Orchia, Lex Fannia.
+*Odp:* Lex Oppia, Lex Orchia, Lex Fannia
 
-**3. Wymień miasta związane z Libaniuszem.**
+**3. Wymien miasta zwiazane z Libaniuszem:**
 
-*Odp:* Konstantynopol, Antiochia, Bejrut, Ateny.
+*Odp:* konstantynopol, antiochia, bejrut, ateny
 
-**4. Którzy cesarze sprzeciwiali się aborcji?**
+**4. którzy cesarze sprzeciwiali sie aborcji:**
 
-*Odp:* Septymiusz Sewer, Antoniusz Karakalla, Justynian.
+*Odp:* Septymiusz Sewr, Antoniusz Karakala, Justynian
 
-**5. W którym roku według Tytusa w Rzymie był budynek 3-piętrowy?**
+**5. w którym roku wg Tytusa jakiegos w rzymie byl budynek 3- pietrowy**
 
-*Odp:* W 218 r. p.n.e. budynek wielopiętrowy w Rzymie.
+*Odp:* 218 r p.n.e budynek wielopiętrowy w Rzymie
 
-**6. Jak po łacinie jest obraza 2. strony albo sędziego?**
+**6. jak po lacinie jest obraza 2 strony albo sedziego**
 
-*Odp:* Maledictum lub convictum.
+*Odp:* Maledictum lub convictum
 
-**7. Jacy władcy regulowali kastrowanie?**
+**7. jacy wladcy regulowali kastrowanie:**
 
-*Odp:* Domicjan, Hadrian, Konstantyn, Nerwa, Leon, Justynian, ustawy Sulli.
+*Odp:* Domicjan, Hadrian, Konstantyn, Nerw, Leon, Justynian, ustawy Sulli
 
-**8. Który papież z XIII w. zakazał duchownym studiować prawo?**
+**8. ktory papiez z XIII w. zakazal klechom studiowac prawo**
 
-*Odp:* Papież Honoriusz III w 1219 r. wydał Bullę Super Speculam, wprowadzając zakaz nauki prawa rzymskiego na Uniwersytecie Paryskim.
+*Odp:* Papież Honoriusz III w 1219r. wydał – Bulla Super Speculam, wprowadzając zakaz nauki prawa rzymskiego na Uniwersytecie Paryskim
 
 ## Referat 1. Związki Theodora Mommsena z Wrocławiem
 
