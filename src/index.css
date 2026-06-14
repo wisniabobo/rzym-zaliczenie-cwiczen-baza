@@ -289,18 +289,23 @@ main {
 
 .menu-row {
   display: flex;
+  flex-wrap: wrap;
   gap: 1.5rem;
   width: 100%;
-  max-width: 600px;
+  max-width: 720px;
 }
 
 .small-card {
   padding: 2rem 1rem;
-  flex: 1;
+  flex: 1 1 140px;
 }
 .small-card h2 {
-  font-size: 1.6rem;
+  font-size: 1.35rem;
   margin-bottom: 0;
+}
+.plan-card {
+  border-color: rgba(236, 153, 75, 0.5);
+  box-shadow: 0 0 30px rgba(236, 153, 75, 0.12);
 }
 .small-card .icon-wrapper {
   margin-bottom: 0.5rem;
@@ -453,6 +458,7 @@ main {
   overflow-y: auto;
   padding-right: 15px;
   color: #e2e8f0;
+  white-space: pre-line;
 }
 
 .answer-text::-webkit-scrollbar {
@@ -1000,4 +1006,124 @@ main {
   .info-card {
     padding: 2rem 1.5rem;
   }
+}
+
+/* ===== Plan 3h view ===== */
+.plan-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 760px;
+  margin: 0 auto;
+}
+.plan-step {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 16px;
+  padding: 1.1rem 1.3rem;
+  text-align: left;
+  line-height: 1.55;
+}
+.plan-step b { color: var(--text-primary); }
+.plan-time {
+  flex-shrink: 0;
+  font-weight: 700;
+  color: #f0a04b;
+  font-variant-numeric: tabular-nums;
+  min-width: 92px;
+}
+.plan-tip {
+  max-width: 760px;
+  margin: 1.5rem auto 0;
+  background: rgba(139, 92, 246, 0.1);
+  border: 1px solid rgba(139, 92, 246, 0.3);
+  border-radius: 16px;
+  padding: 1.2rem 1.4rem;
+  text-align: left;
+  line-height: 1.7;
+}
+.plan-tip b { color: #c4b5fd; }
+
+/* ===== Flashcard cram upgrades ===== */
+.deck-title {
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  margin-bottom: 0.8rem;
+  font-weight: 600;
+}
+.known-pill { color: var(--success); font-weight: 700; }
+.hard-pill { color: #f0a04b; font-weight: 700; margin-left: 0.4rem; }
+
+.fc-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin: 1.2rem 0 0.4rem;
+}
+.fc-btn {
+  flex: 1;
+  max-width: 220px;
+  padding: 0.9rem 1rem;
+  border-radius: 14px;
+  border: 1px solid var(--glass-border);
+  font-size: 1.05rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.12s ease, box-shadow 0.2s ease;
+  color: var(--text-primary);
+}
+.fc-btn:hover { transform: translateY(-2px); }
+.fc-btn.knownbtn { background: rgba(16, 185, 129, 0.18); border-color: rgba(16,185,129,0.5); }
+.fc-btn.hard { background: rgba(240, 160, 75, 0.16); border-color: rgba(240,160,75,0.5); }
+.fc-btn kbd, .kbd-hint kbd {
+  background: rgba(255,255,255,0.12);
+  border-radius: 6px;
+  padding: 1px 7px;
+  font-size: 0.8rem;
+  margin-left: 0.3rem;
+  border: 1px solid rgba(255,255,255,0.15);
+}
+.repeat-hard-btn {
+  display: block;
+  margin: 1rem auto 0;
+  padding: 0.9rem 1.6rem;
+  border-radius: 14px;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: #fff;
+  background: linear-gradient(135deg, #f0a04b, #ec4899);
+  box-shadow: 0 8px 24px rgba(236, 72, 153, 0.3);
+}
+.kbd-hint {
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  margin-top: 1rem;
+}
+
+/* ===== Cram button on topics view ===== */
+.cram-btn {
+  display: inline-block;
+  margin-top: 0.8rem;
+  padding: 0.7rem 1.3rem;
+  border-radius: 12px;
+  border: 1px solid rgba(139, 92, 246, 0.5);
+  background: rgba(139, 92, 246, 0.15);
+  color: var(--text-primary);
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.12s ease;
+}
+.cram-btn:hover { transform: translateY(-2px); }
+
+@media (max-width: 600px) {
+  .fc-actions { flex-direction: row; }
+  .plan-step { flex-direction: column; gap: 0.4rem; }
+  .plan-time { min-width: 0; }
 }

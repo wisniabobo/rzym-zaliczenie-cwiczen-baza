@@ -1,15 +1,26 @@
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect, useCallback } from 'react';
 import { data, theory } from './data';
 import './index.css';
 
+const shuffle = (arr) => {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+};
+
 function App() {
-  const [view, setView] = useState('home'); 
-  const [selectedTopic, setSelectedTopic] = useState(null);
+  const [view, setView] = useState('home');
   const [expandedTheory, setExpandedTheory] = useState(null);
-  
-  // Flashcards state
-  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
+
+  // Flashcards (deck-based)
+  const [deck, setDeck] = useState([]);
+  const [deckTitle, setDeckTitle] = useState('');
+  const [cardIdx, setCardIdx] = useState(0);
   const [isFlipped, setIsFlipped] = useState(false);
+  const [known, setKnown] = useState({});
 
   // Quiz state
   const [quizQuestions, setQuizQuestions] = useState([]);
@@ -18,49 +29,70 @@ function App() {
   const [selectedAnswer, setSelectedAnswer] = useState(null);
   const [isAnswered, setIsAnswered] = useState(false);
 
-  // Helper to get all questions flat
-  const allQuestions = useMemo(() => {
-    return data.flatMap(topic => topic.questions);
-  }, []);
+  const allQuestions = useMemo(() => data.flatMap(topic => topic.questions), []);
 
-  const startFlashcards = (topicIndex) => {
-    setSelectedTopic(topicIndex);
-    setCurrentQuestionIndex(0);
+  const openDeck = (questions, title) => {
+    setDeck(questions);
+    setDeckTitle(title);
+    setCardIdx(0);
     setIsFlipped(false);
+    setKnown({});
     setView('flashcards');
   };
+  const startFlashcards = (topicIndex) => openDeck(data[topicIndex].questions, data[topicIndex].topic);
+  const startCram = () => openDeck(shuffle(allQuestions), 'Wszystkie pytania — tryb cram 🔀');
 
-  const nextFlashcard = () => {
-    if (currentQuestionIndex < data[selectedTopic].questions.length - 1) {
-      setIsFlipped(false);
-      setTimeout(() => setCurrentQuestionIndex(prev => prev + 1), 150);
-    }
+  const nextFlashcard = useCallback(() => {
+    setIsFlipped(false);
+    setCardIdx(prev => Math.min(prev + 1, deck.length - 1));
+  }, [deck.length]);
+
+  const prevFlashcard = useCallback(() => {
+    setIsFlipped(false);
+    setCardIdx(prev => Math.max(prev - 1, 0));
+  }, []);
+
+  const mark = useCallback((val) => {
+    const card = deck[cardIdx];
+    if (!card) return;
+    setKnown(k => ({ ...k, [card.q]: val }));
+    setCardIdx(prev => (prev < deck.length - 1 ? prev + 1 : prev));
+    setIsFlipped(false);
+  }, [deck, cardIdx]);
+
+  const reshuffle = () => { setDeck(d => shuffle(d)); setCardIdx(0); setIsFlipped(false); };
+  const repeatHard = () => {
+    const hard = deck.filter(c => !known[c.q]);
+    if (hard.length) openDeck(shuffle(hard), deckTitle + ' — powtórka trudnych');
   };
 
-  const prevFlashcard = () => {
-    if (currentQuestionIndex > 0) {
-      setIsFlipped(false);
-      setTimeout(() => setCurrentQuestionIndex(prev => prev - 1), 150);
-    }
-  };
+  // Keyboard control for fast cramming
+  useEffect(() => {
+    if (view !== 'flashcards') return;
+    const onKey = (e) => {
+      if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); setIsFlipped(f => !f); }
+      else if (e.key === 'ArrowRight') nextFlashcard();
+      else if (e.key === 'ArrowLeft') prevFlashcard();
+      else if (e.key.toLowerCase() === 'z') mark(true);
+      else if (e.key.toLowerCase() === 'x') mark(false);
+    };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, [view, nextFlashcard, prevFlashcard, mark]);
 
-  const startQuizSetup = () => {
-    setView('quiz-setup');
-  };
+  const startQuizSetup = () => setView('quiz-setup');
 
   const generateQuiz = (numQuestions) => {
-    let shuffled = [...allQuestions].sort(() => 0.5 - Math.random());
+    let shuffled = shuffle(allQuestions);
     let selected = shuffled.slice(0, numQuestions);
-
     const questionsWithOptions = selected.map(q => {
       let options = [q.a];
       let otherAnswers = allQuestions.filter(other => other.a !== q.a).map(o => o.a);
-      otherAnswers.sort(() => 0.5 - Math.random());
+      otherAnswers = shuffle(otherAnswers);
       options.push(...otherAnswers.slice(0, 3));
-      options.sort(() => 0.5 - Math.random());
+      options = shuffle(options);
       return { ...q, options };
     });
-
     setQuizQuestions(questionsWithOptions);
     setQuizIndex(0);
     setQuizScore(0);
@@ -73,9 +105,7 @@ function App() {
     if (isAnswered) return;
     setSelectedAnswer(option);
     setIsAnswered(true);
-    if (option === quizQuestions[quizIndex].a) {
-      setQuizScore(prev => prev + 1);
-    }
+    if (option === quizQuestions[quizIndex].a) setQuizScore(prev => prev + 1);
   };
 
   const nextQuizQuestion = () => {
@@ -88,10 +118,11 @@ function App() {
     }
   };
 
-  const toggleTheory = (index) => {
-    if (expandedTheory === index) setExpandedTheory(null);
-    else setExpandedTheory(index);
-  };
+  const toggleTheory = (index) => setExpandedTheory(expandedTheory === index ? null : index);
+
+  const knownCount = deck.filter(c => known[c.q] === true).length;
+  const hardCount = deck.filter(c => known[c.q] !== true).length;
+  const card = deck[cardIdx];
 
   return (
     <div className="app-container">
@@ -113,6 +144,10 @@ function App() {
             <p>Sprawdź swoją wiedzę w losowym teście wyboru ze wszystkich tematów.</p>
           </div>
           <div className="menu-row">
+            <div className="menu-card small-card plan-card" onClick={() => setView('plan')}>
+              <div className="icon-wrapper">⚡</div>
+              <h2>Plan 3h</h2>
+            </div>
             <div className="menu-card small-card" onClick={() => setView('theory')}>
               <div className="icon-wrapper">📜</div>
               <h2>Teoria</h2>
@@ -129,17 +164,52 @@ function App() {
         </main>
       )}
 
+      {view === 'plan' && (
+        <main className="theory-view">
+          <button className="back-btn" onClick={() => setView('home')}>← Wróć do menu</button>
+          <div className="view-header">
+            <h2>⚡ Plan nauki w 3 godziny (od zera)</h2>
+            <p>Egzamin: 5 pytań z bazy. Cel — odpowiedzieć na każde tak jak w bazie.</p>
+          </div>
+          <div className="plan-list">
+            <div className="plan-step">
+              <span className="plan-time">0:00–0:20</span>
+              <div><strong>📜 Teoria — zrozum, o co chodzi.</strong> Przeczytaj 8 streszczeń referatów. Nie ucz się na pamięć — masz wiedzieć, że „Mommsen = noblista we Wrocławiu", „Karakalla = obywatelstwo dla wszystkich w 212 r." itd. To spina fakty w całość.</div>
+            </div>
+            <div className="plan-step">
+              <span className="plan-time">0:20–1:20</span>
+              <div><strong>📚 Fiszki temat po temacie (8 tematów).</strong> Spacja = obróć, → następne. Po każdej karcie wciśnij <b>Z (Umiem)</b> lub <b>X (Powtórz)</b>. Idź szybko, nie zatrzymuj się na trudnych.</div>
+            </div>
+            <div className="plan-step">
+              <span className="plan-time">1:20–1:30</span>
+              <div><strong>☕ Przerwa.</strong> Krótki reset — mózg utrwala w tle.</div>
+            </div>
+            <div className="plan-step">
+              <span className="plan-time">1:30–2:15</span>
+              <div><strong>🔁 Powtórka trudnych.</strong> W każdym temacie kliknij <b>„Powtórz trudne"</b> i przerabiaj tylko to, czego nie umiesz, aż lista zniknie. Dopisuj sobie mnemoniki do dat i imion.</div>
+            </div>
+            <div className="plan-step">
+              <span className="plan-time">2:15–3:00</span>
+              <div><strong>🎯 Quiz ABCD 2–3 razy</strong> (20–50 pytań). Powtarzaj aż wynik &gt; 80%. To buduje odruch rozpoznawania prawidłowej odpowiedzi.</div>
+            </div>
+          </div>
+          <div className="plan-tip">
+            <strong>💡 Tip na zapamiętywanie:</strong> daty i imiona wiąż w łańcuszki. Np. Karakalla: <b>212</b> (obywatelstwo) → ojciec <b>Septymiusz Sewer</b> + matka <b>Julia Domna</b> → brat <b>Geta</b>. Więźniowie: <b>3</b>2<b>0</b> Konstantyn (światło), <b>3</b>4<b>0</b> Konstancjusz (osobno M/K), <b>529</b> Justynian (koniec więzień prywatnych). Adopcja = <b>18 lat</b> różnicy (plena pubertas), słowa <b>Cycerona</b>.
+          </div>
+        </main>
+      )}
+
       {view === 'theory' && (
         <main className="theory-view">
           <button className="back-btn" onClick={() => setView('home')}>← Wróć do menu</button>
           <div className="view-header">
             <h2>📜 Streszczenia Referatów</h2>
-            <p>Pigułka wiedzy, która pomoże Ci ułożyć pytania w logiczną całość.</p>
+            <p>Pigułka wiedzy, która pomoże Ci ułożyć pytania w logiczną całość. 8 referatów.</p>
           </div>
           <div className="theory-list">
             {theory.map((item, index) => (
-              <div 
-                key={index} 
+              <div
+                key={index}
                 className={`theory-card ${expandedTheory === index ? 'expanded' : ''}`}
                 onClick={() => toggleTheory(index)}
               >
@@ -164,7 +234,7 @@ function App() {
           <div className="info-card">
             <div className="icon-wrapper large">⏱️</div>
             <h2>Ile czasu zajmie Ci nauka?</h2>
-            <p>Mamy w bazie łącznie <strong>{allQuestions.length} pytań</strong> rozbitych na {data.length} tematów.</p>
+            <p>Mamy w bazie łącznie <strong>{allQuestions.length} pytań</strong> rozbitych na {data.length} tematów (8 referatów + pytania z pierwszych zajęć).</p>
             <div className="timeline">
               <div className="timeline-item">
                 <span className="dot"></span>
@@ -179,12 +249,12 @@ function App() {
                 <strong>Utrwalenie w Quizie (ok. 45-60 min):</strong> Rozwiązanie 3-4 quizów. Mózg rozpoznaje prawidłowe odpowiedzi i buduje żelazne skojarzenia.
               </div>
             </div>
-            <p className="summary-text">Razem: około <strong>3 do 4 godzin</strong> solidnej nauki. Najlepszy efekt osiągniesz rozbijając to na krótsze sesje!</p>
+            <p className="summary-text">Razem: około <strong>3 do 4 godzin</strong> solidnej nauki. Masz mało czasu? Otwórz <strong>Plan 3h ⚡</strong> z menu głównego.</p>
           </div>
-          
+
           <div className="info-card verification-card">
             <h3>🛡️ O bazie pytań</h3>
-            <p>Baza została dokładnie zweryfikowana z dwóch dostarczonych plików PDF (ponad 120 pytań z tabeli i notatek). Wszystkie powtórzenia zostały złączone w spójne bloki wiedzy. Z bazy wykluczono tematy, które nie obowiązywały w wymaganym spisie referatów.</p>
+            <p>Baza została dokładnie zweryfikowana z dwóch dostarczonych plików PDF. Każda odpowiedź jest dokładnie taka jak w bazie (1:1) — sprawdzono automatycznie, że jej treść występuje słowo w słowo w jednym z plików. Pytania z obu baz zostały połączone bez przeredagowywania, a powtórzenia złączone w jeden wpis. Z bazy wykluczono tematy, które nie były na Twojej liście 8 referatów.</p>
           </div>
         </main>
       )}
@@ -200,13 +270,13 @@ function App() {
             {data.map((topicData, topicIdx) => (
               <div key={topicIdx} className="theory-card expanded">
                 <div className="theory-card-header">
-                  <h3>{topicData.topic}</h3>
+                  <h3>{topicData.topic} <span className="badge">{topicData.questions.length}</span></h3>
                 </div>
                 <div className="theory-content">
                   {topicData.questions.map((q, qIdx) => (
                     <div key={qIdx} style={{marginBottom: '1rem', paddingBottom: '1rem', borderBottom: '1px solid rgba(255,255,255,0.1)'}}>
                       <div style={{fontWeight: 'bold', marginBottom: '0.5rem'}}>{qIdx + 1}. {q.q}</div>
-                      <div style={{color: '#ddd'}}>{q.a}</div>
+                      <div style={{color: '#ddd', whiteSpace: 'pre-line'}}>{q.a}</div>
                     </div>
                   ))}
                 </div>
@@ -219,10 +289,14 @@ function App() {
       {view === 'topics' && (
         <main className="topics-view">
           <button className="back-btn" onClick={() => setView('home')}>← Wróć do menu</button>
+          <div className="view-header">
+            <h2>Wybierz temat</h2>
+            <button className="cram-btn" onClick={startCram}>🔀 Ucz się wszystkiego (cram, {allQuestions.length})</button>
+          </div>
           <div className="topics-grid">
             {data.map((topicData, index) => (
-              <div 
-                key={index} 
+              <div
+                key={index}
                 className="glass-card topic-item"
                 onClick={() => startFlashcards(index)}
               >
@@ -237,50 +311,49 @@ function App() {
         </main>
       )}
 
-      {view === 'flashcards' && selectedTopic !== null && (
+      {view === 'flashcards' && card && (
         <main className="flashcard-view">
           <button className="back-btn" onClick={() => setView('topics')}>← Wróć do tematów</button>
-          
+
+          <div className="deck-title">{deckTitle}</div>
+
           <div className="progress-container">
-            <div className="progress-bar" style={{width: `${((currentQuestionIndex + 1) / data[selectedTopic].questions.length) * 100}%`}}></div>
+            <div className="progress-bar" style={{width: `${((cardIdx + 1) / deck.length) * 100}%`}}></div>
           </div>
           <div className="progress-text">
-            Pytanie {currentQuestionIndex + 1} z {data[selectedTopic].questions.length}
+            Pytanie {cardIdx + 1} z {deck.length} · <span className="known-pill">✓ {knownCount}</span> <span className="hard-pill">↻ {hardCount}</span>
           </div>
 
           <div className={`flip-card ${isFlipped ? 'flipped' : ''}`} onClick={() => setIsFlipped(!isFlipped)}>
             <div className="flip-card-inner">
               <div className="flip-card-front">
                 <div className="card-decoration"></div>
-                <span className="tap-hint">Tapnij, aby obrócić</span>
-                <h2 className="question-text">
-                  {data[selectedTopic].questions[currentQuestionIndex].q}
-                </h2>
+                <span className="tap-hint">Tapnij / Spacja, aby obrócić</span>
+                <h2 className="question-text">{card.q}</h2>
               </div>
               <div className="flip-card-back">
-                <div className="answer-text">
-                  {data[selectedTopic].questions[currentQuestionIndex].a}
-                </div>
+                <div className="answer-text">{card.a}</div>
               </div>
             </div>
           </div>
 
-          <div className="controls">
-            <button 
-              className="nav-btn" 
-              onClick={prevFlashcard}
-              disabled={currentQuestionIndex === 0}
-            >
-              Poprzednie
-            </button>
-            <button 
-              className="nav-btn primary-btn" 
-              onClick={nextFlashcard}
-              disabled={currentQuestionIndex === data[selectedTopic].questions.length - 1}
-            >
-              Następne
-            </button>
+          <div className="fc-actions">
+            <button className="fc-btn hard" onClick={() => mark(false)}>↻ Powtórz <kbd>X</kbd></button>
+            <button className="fc-btn knownbtn" onClick={() => mark(true)}>✓ Umiem <kbd>Z</kbd></button>
           </div>
+
+          <div className="controls">
+            <button className="nav-btn" onClick={prevFlashcard} disabled={cardIdx === 0}>← Poprzednie</button>
+            <button className="nav-btn" onClick={reshuffle}>🔀 Tasuj</button>
+            <button className="nav-btn primary-btn" onClick={nextFlashcard} disabled={cardIdx === deck.length - 1}>Następne →</button>
+          </div>
+
+          {cardIdx === deck.length - 1 && hardCount > 0 && (
+            <button className="repeat-hard-btn" onClick={repeatHard}>
+              🔁 Powtórz trudne ({hardCount})
+            </button>
+          )}
+          <p className="kbd-hint">Klawisze: <kbd>Spacja</kbd> obróć · <kbd>→</kbd>/<kbd>←</kbd> nawigacja · <kbd>Z</kbd> umiem · <kbd>X</kbd> powtórz</p>
         </main>
       )}
 
@@ -302,7 +375,7 @@ function App() {
       {view === 'quiz' && quizQuestions.length > 0 && (
         <main className="quiz-play-view">
           <button className="back-btn" onClick={() => setView('quiz-setup')}>← Przerwij quiz</button>
-          
+
           <div className="quiz-header-stats">
             <div className="stat">
               <span className="label">Wynik</span>
@@ -313,7 +386,7 @@ function App() {
               <span className="value">{quizIndex + 1} / {quizQuestions.length}</span>
             </div>
           </div>
-          
+
           <div className="progress-container">
             <div className="progress-bar accent" style={{width: `${((quizIndex + 1) / quizQuestions.length) * 100}%`}}></div>
           </div>
@@ -331,8 +404,8 @@ function App() {
                 else btnClass += " disabled";
               }
               return (
-                <button 
-                  key={idx} 
+                <button
+                  key={idx}
                   className={btnClass}
                   onClick={() => handleQuizAnswer(opt)}
                   disabled={isAnswered}
@@ -363,10 +436,10 @@ function App() {
             <span>{quizQuestions.length}</span>
           </div>
           <p className="score-percentage">Twój wynik to <strong>{Math.round((quizScore / quizQuestions.length) * 100)}%</strong></p>
-          
+
           <div className="feedback-message">
-            {quizScore / quizQuestions.length >= 0.8 ? 'Świetna robota! Jesteś gotowa na egzamin.' : 
-             quizScore / quizQuestions.length >= 0.5 ? 'Niezły wynik! Jeszcze trochę powtórek i będzie idealnie.' : 
+            {quizScore / quizQuestions.length >= 0.8 ? 'Świetna robota! Jesteś gotowa na egzamin.' :
+             quizScore / quizQuestions.length >= 0.5 ? 'Niezły wynik! Jeszcze trochę powtórek i będzie idealnie.' :
              'Początki bywają trudne. Przejrzyj jeszcze raz fiszki i spróbuj ponownie!'}
           </div>
 
