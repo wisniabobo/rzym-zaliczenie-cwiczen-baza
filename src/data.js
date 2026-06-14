@@ -136,6 +136,12 @@ export const data = [
       { q: "Kim byli Perigrini?", a: "W prawie rzymskim termin ten stosowano na określenie wolnych osób niebędących obywatelami rzymskimi ani Latynami." },
       { q: "Czego dotyczyła Lex Aelia Sentia wydana w 4 r. w kontekście 'peregrini dediticii'?", a: "Ze statusem peregrini dediticii zrównano wyzwoleńców, którzy będąc w niewoli zostali ukarani za ciężkie przestępstwa lub byli używani do walk w cyrku." }
     ]
+  },
+  {
+    topic: "Bez numeru referatu",
+    questions: [
+      { q: "Co wiesz o słynnym rzymskim pucharku?", a: "Pucharek rzymski (np. Puchar Likurga) stanowił dowód niezwykłego kunsztu rzymskiego szklarstwa i rzemiosła, często wykorzystywanego jako cenny zastaw lub element majątku w sporach prawnych." }
+    ]
   }
 ];
 
