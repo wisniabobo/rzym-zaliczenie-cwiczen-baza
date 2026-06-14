@@ -159,6 +159,14 @@
 
 *Odp:* - ul. Kotlarska 19 w kamienicy “Pod Złotym Krzyżem”, 1856r. przeprowadził się na ul. Ketzerberga 10
 
+**30. Gdzie studiował prawo Mommsen?**
+
+*Odp:* - W Kilonii studiował na wydziale prawa rzymskiego.
+
+**31. Jakimi działami rzymskiego prawa zajmował się Mommsen?**
+
+*Odp:* - Zajmował się rzymskim prawem publicznym oraz rzymskim prawem karnym.
+
 ## Spory wokół dziejowej roli Słowian (Balzer vs Mommsen)
 
 **1. Kiedy i gdzie ukazał się anonimowy list Theodora Mommsena do “Niemców w Austrii”?**
@@ -268,6 +276,14 @@
 
 *Odp:* - Cesarz w obliczu zobowiązań wobec wojska, niedoboru w skarbcu i dewaluacji pieniądza musiał znaleźć dodatkowe źródła dochodu. Płacić mogli tylko ci którzy byli w stanie to robić, dlatego dediticii jako warstwa najuboższa nie mogli być taką siłą polityczną, nie byli w stanie opłacać podatku od wyzwoleń czy spadków powyżej 100 tysięcy sesterców. Dlatego też zostali wyłączeni z ogólnego obywatelstwa.
 
+**17. Dzięki jakiemu edyktowi, jakiej konstytucji prawnie wszyscy mieszkańcy cesarstwa otrzymali obywatelstwo?**
+
+*Odp:* - Edykt Karakalli – Constitutio Antoniniana
+
+**18. Kiedy i gdzie odnaleziono papirus Gissensis 40?**
+
+*Odp:* - 1902 r. - Aszmunejn (Egipt), opublikowany przez Paula Meyera w 1910r.
+
 ## Sprzedaż niewolników (edykt De mancipiis vendundis)
 
 **1. Jaki urzędnik rzymski był odpowiedzialny za niewolników?**
@@ -298,6 +314,18 @@
 
 *Odp:* - peregrini - najczęściej byli sprzedawcami, a obiektem??
 
+**8. W którym wieku edylowie kurulni stworzyli edykt De mancipiis vendundis z katalogiem wad niewolników?**
+
+*Odp:* - Edylowie kurulni stworzyli edykt De mancipiis vendundis z katalogiem wad niewolników w I wieku p.n.e.
+
+**9. Katalog jakich wad zawierał edykt De mancipiis vendundis?**
+
+*Odp:* - Ten edykt zawierał wady takie jak choroby i defekty cielesne, wady umysłu, negatywne cechy charakteru, karalność i narodowość.
+
+**10. Czego pierwotnie dotyczył edykt De mancipiis vendundis, a czego także w czasach Gaiusa?**
+
+*Odp:* - Ten edykt początkowo dotyczył sprzedaży niewolników, które odbywały się na targowiskach. Natomiast za czasów Gaiusa edykt ten dotyczył również sprzedaży gruntów, zbywania majątku nieletnich, a także handlu niewolnikami poza targowiskami.
+
 ## Traktowanie więźniów w konstytucjach cesarskich z okresu dominatu
 
 **1. Który cesarz i kiedy postanowił aby oskarżeni nie mogli być przetrzymywani w ciemnicy lecz mieli zapewnione korzystanie ze światła dziennego?**
@@ -325,6 +353,10 @@
 - 419 - Prawo wchodzenia biskupów do Więzień celem dokonywania dzieła miłosierdzia
 - 451 Walentynian III - nowela o humanitarnym traktowaniu
 - 529 Justynian - zakaz więzień prywatnych, Regularne wizyty biskupów, prowadzono maksymalny okres przetrzymywania
+
+**6. Jak się nazywał retor, który pisał o złej sytuacji w więzieniach w okresie dominatu?**
+
+*Odp:* - Libanios (Libaniusz) - do Teodozjusza Wielkiego (namiestnicy to mordercy i nikczemnicy, w więzieniu osadzeni są oskarżeni dający wiele poręczeń majątkowych, bezpodstawnie oskarżonych przez bogatych i możnych.
 
 ## Prawo rzymskie wobec aborcji
 
@@ -423,6 +455,18 @@
 
 *Odp:* - Polega na wyzwoleniu osób podległych Pater familias spod jego władzy
 
+**16. Czy było możliwe w Rzymie, żeby młodszy przysposobił starszego?**
+
+*Odp:* - Tak, w Rzymie możliwość taka była początkowo tolerowana.
+
+**17. Dzięki komu wiemy, że zdarzały się przypadki przysposobienia starszego przez młodszego?**
+
+*Odp:* - Cyceron opisywał przypadek arogacji P. Klodiusza Pulchra, starszego od arogującego go Publiusza Fonteiusza.
+
+**18. Dzięki komu wiemy o pojęciu plena pubertas?**
+
+*Odp:* - Teofilus oraz Paulus
+
 ## Nadawanie obywatelstwa rzymskiego
 
 **1. Jakie były skutki Ustaw wojny ze sprzymierzeńcami?**
@@ -436,4 +480,14 @@
 **3. Na czym polegała Constitutio Antoninina, edykt karakalli z 212 roku?**
 
 *Odp:* - Dzieło karakalli opisuje powody, dzięki którym stworzono konstytucję. Konstytucja zawiera w sobie przepisy, w których stwierdza się nadanie obywatelstwa cudzoziemcom, którzy przebywają na terenie państwa rzymskiego. Zrównanie całej ludności Imperium pod kątem prawnym i religijnym miały skutkować integracją całego społeczeństwa, zwiększeniem obronności Imperium i pobieraniem podatków od większej ilości ludzi.
+
+**4. W wyniku jakiej wojny wielu mieszkańców Italii otrzymało obywatelstwo rzymskie w I w. p.n.e.?**
+
+*Odp:* - W wyniku wojny ze sprzymierzeńcami, to były takie ustawy od lat 90 do 99 przed Chrystusem.
+
+**5. Jaka ustawa i z którego roku ułatwiała otrzymanie obywatelstwa rzymskiego?**
+
+*Odp:* - Lex Acilia z 123/2 pne – przewidywała nagrodę dla perygrynów, którzy skuteczne przeprowadzili oskarżenie urzędnika
+- jesienią 90r. p.n.e. uchwalono Lex Iulia de civitate Latinis et sociis danda – nadawała obywatelstwo wszystkim wiernym sprzymierzeńcom, który nie przyłączyli się do powstańców. Ale było to mało.
+- 89r. p.n.e. uchwalono ustawę Lex Plautia Papiria – otwierała drogę do obywatelstwa wszystkim mieszkańcom (dokładnie tym, którzy złożą broń w ciągu 60dni).
 

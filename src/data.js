@@ -154,6 +154,14 @@ export const data = [
       {
         "q": "Gdzie mieszkał Mommsen we Wrocławiu?",
         "a": "- ul. Kotlarska 19 w kamienicy “Pod Złotym Krzyżem”, 1856r. przeprowadził się na ul. Ketzerberga 10"
+      },
+      {
+        "q": "Gdzie studiował prawo Mommsen?",
+        "a": "- W Kilonii studiował na wydziale prawa rzymskiego."
+      },
+      {
+        "q": "Jakimi działami rzymskiego prawa zajmował się Mommsen?",
+        "a": "- Zajmował się rzymskim prawem publicznym oraz rzymskim prawem karnym."
       }
     ]
   },
@@ -264,6 +272,14 @@ export const data = [
       {
         "q": "Powody wykluczenia peregrynów z nadania obywatelstwa",
         "a": "- Cesarz w obliczu zobowiązań wobec wojska, niedoboru w skarbcu i dewaluacji pieniądza musiał znaleźć dodatkowe źródła dochodu. Płacić mogli tylko ci którzy byli w stanie to robić, dlatego dediticii jako warstwa najuboższa nie mogli być taką siłą polityczną, nie byli w stanie opłacać podatku od wyzwoleń czy spadków powyżej 100 tysięcy sesterców. Dlatego też zostali wyłączeni z ogólnego obywatelstwa."
+      },
+      {
+        "q": "Dzięki jakiemu edyktowi, jakiej konstytucji prawnie wszyscy mieszkańcy cesarstwa otrzymali obywatelstwo?",
+        "a": "- Edykt Karakalli – Constitutio Antoniniana"
+      },
+      {
+        "q": "Kiedy i gdzie odnaleziono papirus Gissensis 40?",
+        "a": "- 1902 r. - Aszmunejn (Egipt), opublikowany przez Paula Meyera w 1910r."
       }
     ]
   },
@@ -297,6 +313,18 @@ export const data = [
       {
         "q": "Kto był najczęstszym obiektem sprzedaży",
         "a": "- peregrini - najczęściej byli sprzedawcami, a obiektem??"
+      },
+      {
+        "q": "W którym wieku edylowie kurulni stworzyli edykt De mancipiis vendundis z katalogiem wad niewolników?",
+        "a": "- Edylowie kurulni stworzyli edykt De mancipiis vendundis z katalogiem wad niewolników w I wieku p.n.e."
+      },
+      {
+        "q": "Katalog jakich wad zawierał edykt De mancipiis vendundis?",
+        "a": "- Ten edykt zawierał wady takie jak choroby i defekty cielesne, wady umysłu, negatywne cechy charakteru, karalność i narodowość."
+      },
+      {
+        "q": "Czego pierwotnie dotyczył edykt De mancipiis vendundis, a czego także w czasach Gaiusa?",
+        "a": "- Ten edykt początkowo dotyczył sprzedaży niewolników, które odbywały się na targowiskach. Natomiast za czasów Gaiusa edykt ten dotyczył również sprzedaży gruntów, zbywania majątku nieletnich, a także handlu niewolnikami poza targowiskami."
       }
     ]
   },
@@ -322,6 +350,10 @@ export const data = [
       {
         "q": "Jakie regulacje dotyczyły więźniów?",
         "a": "- 314 Konstantyn Wielki - zabrania przetrzymywania osadzonych w procesach prywatnych którzy wnieśli apelację\n- 320 Konstantyn Wielki - humanitarne traktowanie więźniów, szybkie śledztwo, szybki proces, nie nakładanie Kajdan tylko łańcuchy, nie można przetrzymywać w ciemnicy, noc w zdrowych zewnętrznych pomieszczeniach, Szczególne odpowiedzialność została nałożona na sędziów i strażników, za przetrzymywanie w złych warunkach lub doprowadzenie do śmierci więźnia groziły surowe kary włącznie z karą główną dla przełożonych więzienia\n- 326 Konstantyn Wielki - oskarżony przebywający w więzieniu powinien być ponownie protokolarnie przesłuchany\n- 380 Konstytucje Gracjana, walentyniana i teodozjusza - zabraniają nakładania więźniom Kajdan, Jeżeli nie są skazani, Obowiązek sporządzenia co 30 dni rejestrów więźniów, Żądano szybkiego rozpoznania spraw\n- 419 - Prawo wchodzenia biskupów do Więzień celem dokonywania dzieła miłosierdzia\n- 451 Walentynian III - nowela o humanitarnym traktowaniu\n- 529 Justynian - zakaz więzień prywatnych, Regularne wizyty biskupów, prowadzono maksymalny okres przetrzymywania"
+      },
+      {
+        "q": "Jak się nazywał retor, który pisał o złej sytuacji w więzieniach w okresie dominatu?",
+        "a": "- Libanios (Libaniusz) - do Teodozjusza Wielkiego (namiestnicy to mordercy i nikczemnicy, w więzieniu osadzeni są oskarżeni dający wiele poręczeń majątkowych, bezpodstawnie oskarżonych przez bogatych i możnych."
       }
     ]
   },
@@ -420,6 +452,18 @@ export const data = [
       {
         "q": "Na czym polegała emancypacja?",
         "a": "- Polega na wyzwoleniu osób podległych Pater familias spod jego władzy"
+      },
+      {
+        "q": "Czy było możliwe w Rzymie, żeby młodszy przysposobił starszego?",
+        "a": "- Tak, w Rzymie możliwość taka była początkowo tolerowana."
+      },
+      {
+        "q": "Dzięki komu wiemy, że zdarzały się przypadki przysposobienia starszego przez młodszego?",
+        "a": "- Cyceron opisywał przypadek arogacji P. Klodiusza Pulchra, starszego od arogującego go Publiusza Fonteiusza."
+      },
+      {
+        "q": "Dzięki komu wiemy o pojęciu plena pubertas?",
+        "a": "- Teofilus oraz Paulus"
       }
     ]
   },
@@ -437,6 +481,14 @@ export const data = [
       {
         "q": "Na czym polegała Constitutio Antoninina, edykt karakalli z 212 roku?",
         "a": "- Dzieło karakalli opisuje powody, dzięki którym stworzono konstytucję. Konstytucja zawiera w sobie przepisy, w których stwierdza się nadanie obywatelstwa cudzoziemcom, którzy przebywają na terenie państwa rzymskiego. Zrównanie całej ludności Imperium pod kątem prawnym i religijnym miały skutkować integracją całego społeczeństwa, zwiększeniem obronności Imperium i pobieraniem podatków od większej ilości ludzi."
+      },
+      {
+        "q": "W wyniku jakiej wojny wielu mieszkańców Italii otrzymało obywatelstwo rzymskie w I w. p.n.e.?",
+        "a": "- W wyniku wojny ze sprzymierzeńcami, to były takie ustawy od lat 90 do 99 przed Chrystusem."
+      },
+      {
+        "q": "Jaka ustawa i z którego roku ułatwiała otrzymanie obywatelstwa rzymskiego?",
+        "a": "- Lex Acilia z 123/2 pne – przewidywała nagrodę dla perygrynów, którzy skuteczne przeprowadzili oskarżenie urzędnika\n- jesienią 90r. p.n.e. uchwalono Lex Iulia de civitate Latinis et sociis danda – nadawała obywatelstwo wszystkim wiernym sprzymierzeńcom, który nie przyłączyli się do powstańców. Ale było to mało.\n- 89r. p.n.e. uchwalono ustawę Lex Plautia Papiria – otwierała drogę do obywatelstwa wszystkim mieszkańcom (dokładnie tym, którzy złożą broń w ciągu 60dni)."
       }
     ]
   }
@@ -452,23 +504,27 @@ export const theory = [
     content: "W 1897 r. na łamach wiedeńskiego 'Neue Freie Presse', 80-letni Mommsen opublikował list do 'Niemców w Austrii'. W tekście tym, oburzony próbami zrównania języka czeskiego z niemieckim (rozporządzenia Badeniego), nazwał Słowian 'apostołami barbarzyństwa' dążącymi do zniszczenia 500-letniej pracy Niemców. Na tę szowinistyczną i anty-słowiańską odezwę najdobitniej odpowiedział Oswald Balzer (1858-1933) – polski uczony i historyk prawa. W swoim liście w 'Słowie Polskim' stanowczo bronił kultury słowiańskiej i jej wkładu w cywilizację europejską, wykazując historyczne pomyłki i uprzedzenia niemieckiego noblisty. Mommsen został po tym wydarzeniu okrzyknięty m.in. 'spadkobiercą krzyżactwa'."
   },
   {
-    topic: "Constitutio Antoniniana i nadawanie obywatelstwa",
-    content: "Przez wieki Rzymianie różnicowali ludność na obywateli, Latynów i peregrynów (cudzoziemców). Proces integracji przebiegał stopniowo (m.in. Lex Acilia, Lex Iulia, Lex Plautia Papiria, włączające mieszkańców Italii). Przełomem był edykt cesarza Karakalli z 212 r. n.e., znany jako Constitutio Antoniniana. Nadał on obywatelstwo rzymskie wszystkim wolnym mieszkańcom Imperium, z wyjątkiem najbiedniejszej grupy pokonanych (peregrini dediticii). Powody wydania edyktu to m.in.: cele fiskalne (Karakalla potrzebował pieniędzy i podwoił podatki spadkowe i wyzwoleńcze, które płacili tylko obywatele), ujednolicenie administracyjne, zjednanie poddanych oraz aspekty religijne. Pełne obywatelstwo wykluczonym grupom nadał ostatecznie dopiero Justynian w 530 r."
+    topic: "Constitutio Antoniniana. Przyczyny wydania edyktu Karakalli (212 r.)",
+    content: "Edykt cesarza Karakalli z 212 r. n.e., znany jako Constitutio Antoniniana, nadał obywatelstwo rzymskie wszystkim wolnym mieszkańcom Imperium, z wyjątkiem najbiedniejszej grupy pokonanych (peregrini dediticii); poza edyktem pozostali też peregrini certae civitatis. Wiemy o nim głównie dzięki Kasjuszowi Dionowi (Dio Cassius) oraz Ulpianowi, a jego treść potwierdza papirus Gissensis 40. Powody wydania edyktu to: motyw proceduralno-administracyjny (usprawnienie nadawania obywatelstwa wobec mnóstwa wniosków), asymilacja żywiołów obcych (kosmopolityczna koncepcja Sewera), motyw religijny (zjednanie poddanych dla kultu bóstw państwowych) oraz podłoże fiskalne (niedobory w skarbcu, dewaluacja pieniądza i zobowiązania wobec wojska). Karakalla – syn Septymiusza Sewera i Julii Domny – urodził się w Lugdunum (Lyon). Pełne obywatelstwo wykluczonym grupom nadał dopiero Justynian w 530 r."
   },
   {
-    topic: "Traktowanie więźniów w okresie dominatu",
-    content: "W okresie dominatu (od przełomu III/IV wieku) zaczęto wprowadzać humanitarne regulacje dotyczące przetrzymywania więźniów, co wiązało się m.in. z chrystianizacją imperium. Cesarz Konstantyn Wielki w 320 r. zakazał trzymania oskarżonych w ciemnicy, nakazując zapewnienie im światła dziennego i zakazując stosowania zbyt ciężkich kajdan. Konstancjusz (340 r.) wprowadził podział więzień na męskie i żeńskie. Gracjan i Walentynian nakazali sędziom weryfikację rejestrów więziennych co 30 dni, a Honoriusz zobowiązał sędziów do niedzielnych wizytacji (później pozwolono na to biskupom). Justynian w 529 r. całkowicie zakazał istnienia więzień prywatnych."
+    topic: "Sprzedaż niewolników (edykt De mancipiis vendundis)",
+    content: "Obrót niewolnikami na rzymskich targowiskach nadzorowali edylowie kurulni. W I w. p.n.e. wydali oni edykt 'De mancipiis vendundis', który ogłaszał katalog typowych wad niewolnika: choroby i defekty cielesne, wady umysłu, negatywne cechy charakteru (np. skłonność do ucieczek czy włóczęgostwa), karalność i narodowość. Sprzedawca musiał jawnie zadeklarować te wady, a odpowiadał za nie nawet wtedy, gdy o nich nie wiedział (odpowiedzialność obiektywna) – pod warunkiem, że umowę zawarto na targowisku, a wada była wymieniona w edykcie. Pierwotnie edykt dotyczył tylko sprzedaży niewolników na targowiskach, a w czasach Gaiusa rozszerzono go także na sprzedaż gruntów, zbywanie majątku nieletnich i handel niewolnikami poza targowiskami. Kryteria wyceny niewolnika (wg Ulpiana): narodowość, wiek, wykształcenie i cechy fizyczne (siła, muskulatura, zdrowie); ceny wahały się od 200 do 700 000 sesterców."
   },
   {
-    topic: "Sprzedaż niewolników (De mancipiis vendundis)",
-    content: "Obrót niewolnikami na rzymskich targowiskach (nadzorowany przez edylów kurulnych) wiązał się z licznymi oszustwami, zwłaszcza ze strony handlarzy z Grecji. W I w. p.n.e. edylowie wydali edykt 'De mancipiis vendundis'. Zmuszał on sprzedawcę do jawnego zadeklarowania wszelkich wad ukrytych niewolnika: czy jest przewlekle chory, czy ma skłonności do ucieczek lub włóczęgostwa. Sprzedawca odpowiadał za te wady nawet, jeśli o nich nie wiedział (odpowiedzialność obiektywna). Kupującemu przysługiwały dwa powództwa: o zwrot pełnej ceny lub o jej obniżenie."
-  },
-  {
-    topic: "Zasada 'adoptio naturam imitatur'",
-    content: "Rzymska paremia 'adoptio naturam imitatur' oznacza, że adopcja powinna naśladować biologię i naturę (słowa Cycerona). Była ona instytucją stworzoną by przedłużyć ród dla osób bezdzietnych. Zasadniczo adoptujący musiał być starszy od adoptowanego o okres pełnej dojrzałości fizycznej ('plena pubertas'), czyli 18 lat. Kompilatorzy justyniańscy uważali przysposobienie starszego przez młodszego za sprzeczne z naturą, chociaż w czasach Republiki takie przypadki były początkowo tolerowane. Zgodnie z tą zasadą zakazywano też adopcji kastracji (castrati) z powodu trwałej impotencji, aż do czasów Leona Filozofa."
+    topic: "Traktowanie więźniów w konstytucjach cesarskich z okresu dominatu",
+    content: "W okresie dominatu (od przełomu III/IV wieku) zaczęto wprowadzać humanitarne regulacje dotyczące przetrzymywania więźniów, co wiązało się m.in. z chrystianizacją imperium. Cesarz Konstantyn Wielki w 320 r. zakazał trzymania oskarżonych w ciemnicy, nakazując zapewnienie im światła dziennego i zakazując stosowania zbyt ciężkich kajdan. Konstancjusz (340 r.) wprowadził podział więzień na męskie i żeńskie. Gracjan i Walentynian (380 r.) nakazali sporządzanie rejestrów więźniów co 30 dni, a Honoriusz zobowiązał sędziów do niedzielnych wizytacji (od 419 r. pozwolono wchodzić do więzień biskupom). O złych warunkach w więzieniach pisał retor Libaniusz do Teodozjusza Wielkiego. Justynian w 529 r. całkowicie zakazał istnienia więzień prywatnych."
   },
   {
     topic: "Prawo rzymskie wobec aborcji",
-    content: "Początkowo rzymskie prawo nie penalizowało aborcji, traktując płód (nasciturus) wyłącznie jako część wnętrzności matki (portio mulieris). Podejście zaczęło się zmieniać w okresie cesarstwa m.in. z pobudek demograficznych. Septymiusz Sewer i Karakalla około 211 r. zakazali aborcji, jednak powodem nie była ochrona życia płodu, ale ochrona praw ojca do posiadania potomstwa (za usunięcie ciąży bez zgody męża groziło żonie wygnanie). Dopiero pod wpływem wschodnich systemów (m.in. Septuaginty) i chrześcijaństwa (od II w. n.e.) zaczęto rozróżniać płód ukształtowany od nieukształtowanego, zbliżając sztuczne poronienie do zabójstwa, choć prawo długo powielało dawne świeckie formuły."
+    content: "Początkowo rzymskie prawo nie penalizowało aborcji, traktując płód (nasciturus) wyłącznie jako część wnętrzności matki (portio mulieris). Podejście zaczęło się zmieniać w okresie cesarstwa m.in. z pobudek demograficznych. Septymiusz Sewer i Karakalla w latach 198-211 (reskrypt z ok. 211 r.) zakazali aborcji, jednak powodem nie była ochrona życia płodu, ale ochrona praw ojca do posiadania potomstwa (za usunięcie ciąży bez zgody męża groziło żonie czasowe wygnanie). Konstantyn Wielki (331 r.) i Teodozjusz II (449 r.), redukując podstawy do rozwodu, pominęli kwestię sztucznego poronienia. Już lex Cornelia z 81 r. p.n.e. (prawo przeciw mordom) zaczęto z czasem stosować do wytwarzających środki aborcyjne. Dopiero pod wpływem wschodnich systemów i chrześcijaństwa (od II w. n.e.) zaczęto zbliżać sztuczne poronienie do zabójstwa, choć prawo długo powielało dawne świeckie formuły."
+  },
+  {
+    topic: "Zasada 'adoptio naturam imitatur' (Adopcja naśladuje naturę)",
+    content: "Rzymska paremia 'adoptio naturam imitatur' oznacza, że adopcja powinna naśladować biologię i naturę (słowa Cycerona). Była ona instytucją stworzoną by przedłużyć ród dla osób bezdzietnych. Zasadniczo adoptujący musiał być starszy od adoptowanego o okres pełnej dojrzałości fizycznej i psychicznej ('plena pubertas'), czyli 18 lat (różnicę tę wyznaczył Modestyn; o pojęciu wiemy od Teofilusa i Paulusa). Kompilatorzy justyniańscy uważali przysposobienie starszego przez młodszego za sprzeczne z naturą, chociaż w czasach Republiki takie przypadki były początkowo tolerowane (Cyceron opisał arogację Klodiusza Pulchra, starszego od arogującego go Publiusza Fonteiusza). Rozróżniano arogację (adrogatio – przyjęcie pod władzę dojrzałego mężczyzny sui iuris, decyzją zgromadzenia ludowego) i adopcję właściwą (adoptio sensu stricto – osób alieni iuris, przy udziale pretora). Zakaz adopcji przez kastratów (castrati) i niewolników zniósł Leon Filozof."
+  },
+  {
+    topic: "Nadawanie obywatelstwa rzymskiego",
+    content: "Rzymianie przez wieki różnicowali ludność na obywateli, Latynów i peregrynów (cudzoziemców). Integracja przebiegała stopniowo dzięki kolejnym ustawom: Lex Acilia (123/2 p.n.e.) przewidywała nagrodę obywatelstwa dla peregrynów skutecznie oskarżających urzędnika, Lex Iulia de civitate (90 p.n.e.) nadawała obywatelstwo wiernym sprzymierzeńcom, a Lex Plautia Papiria (89 p.n.e.) otwierała je dla mieszkańców Italii – skutkiem wojny ze sprzymierzeńcami w 89 r. p.n.e. obywatelstwo otrzymali wszyscy mieszkańcy Italii. Obywatelstwo nadawano też prowincjom (cesarz Klaudiusz nadał je mieszkańcom Volubilis, dziś w Maroku). Zwieńczeniem procesu była Constitutio Antoniniana – edykt Karakalli z 212 r., który nadał obywatelstwo niemal wszystkim wolnym mieszkańcom Imperium, dążąc do integracji społeczeństwa, zwiększenia obronności i poboru podatków od większej liczby ludzi."
   }
 ];
