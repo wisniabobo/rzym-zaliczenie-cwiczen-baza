@@ -1,5 +1,5 @@
 import { useState, useMemo, useEffect, useCallback } from 'react';
-import { data, theory } from './data';
+import { data } from './data';
 import './index.css';
 
 const shuffle = (arr) => {
@@ -13,14 +13,12 @@ const shuffle = (arr) => {
 
 function App() {
   const [view, setView] = useState('home');
-  const [expandedTheory, setExpandedTheory] = useState(null);
 
-  // Flashcards (deck-based)
+  // Flashcards (deck-based, simple)
   const [deck, setDeck] = useState([]);
   const [deckTitle, setDeckTitle] = useState('');
   const [cardIdx, setCardIdx] = useState(0);
   const [isFlipped, setIsFlipped] = useState(false);
-  const [known, setKnown] = useState({});
 
   // Quiz state
   const [quizQuestions, setQuizQuestions] = useState([]);
@@ -36,7 +34,6 @@ function App() {
     setDeckTitle(title);
     setCardIdx(0);
     setIsFlipped(false);
-    setKnown({});
     setView('flashcards');
   };
   const startFlashcards = (topicIndex) => openDeck(data[topicIndex].questions, data[topicIndex].topic);
@@ -52,33 +49,17 @@ function App() {
     setCardIdx(prev => Math.max(prev - 1, 0));
   }, []);
 
-  const mark = useCallback((val) => {
-    const card = deck[cardIdx];
-    if (!card) return;
-    setKnown(k => ({ ...k, [card.q]: val }));
-    setCardIdx(prev => (prev < deck.length - 1 ? prev + 1 : prev));
-    setIsFlipped(false);
-  }, [deck, cardIdx]);
-
-  const reshuffle = () => { setDeck(d => shuffle(d)); setCardIdx(0); setIsFlipped(false); };
-  const repeatHard = () => {
-    const hard = deck.filter(c => !known[c.q]);
-    if (hard.length) openDeck(shuffle(hard), deckTitle + ' — powtórka trudnych');
-  };
-
-  // Keyboard control for fast cramming
+  // Keyboard control: Space = flip, arrows = navigate
   useEffect(() => {
     if (view !== 'flashcards') return;
     const onKey = (e) => {
       if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); setIsFlipped(f => !f); }
       else if (e.key === 'ArrowRight') nextFlashcard();
       else if (e.key === 'ArrowLeft') prevFlashcard();
-      else if (e.key.toLowerCase() === 'z') mark(true);
-      else if (e.key.toLowerCase() === 'x') mark(false);
     };
     window.addEventListener('keydown', onKey);
     return () => window.removeEventListener('keydown', onKey);
-  }, [view, nextFlashcard, prevFlashcard, mark]);
+  }, [view, nextFlashcard, prevFlashcard]);
 
   const startQuizSetup = () => setView('quiz-setup');
 
@@ -118,10 +99,6 @@ function App() {
     }
   };
 
-  const toggleTheory = (index) => setExpandedTheory(expandedTheory === index ? null : index);
-
-  const knownCount = deck.filter(c => known[c.q] === true).length;
-  const hardCount = deck.filter(c => known[c.q] !== true).length;
   const card = deck[cardIdx];
 
   return (
@@ -148,10 +125,6 @@ function App() {
               <div className="icon-wrapper">⚡</div>
               <h2>Plan 3h</h2>
             </div>
-            <div className="menu-card small-card" onClick={() => setView('theory')}>
-              <div className="icon-wrapper">📜</div>
-              <h2>Teoria</h2>
-            </div>
             <div className="menu-card small-card" onClick={() => setView('list-all')}>
               <div className="icon-wrapper">📋</div>
               <h2>Wszystkie Pytania</h2>
@@ -169,65 +142,36 @@ function App() {
           <button className="back-btn" onClick={() => setView('home')}>← Wróć do menu</button>
           <div className="view-header">
             <h2>⚡ Plan nauki w 3 godziny (od zera, bez quizu)</h2>
-            <p>Egzamin: 5 pytań z bazy. Metoda: aktywne przypominanie — mów/pisz odpowiedź Z PAMIĘCI, zanim sprawdzisz.</p>
+            <p>Egzamin: 5 pytań z bazy. Metoda: aktywne przypominanie — mów/pisz odpowiedź Z PAMIĘCI, zanim obrócisz kartę.</p>
           </div>
           <div className="plan-list">
             <div className="plan-step">
-              <span className="plan-time">0:00–0:25</span>
-              <div><strong>📜 Teoria — zrozum, o co chodzi.</strong> Przeczytaj 8 streszczeń. Po każdym zamknij oczy i powiedz jednym zdaniem, o co chodzi w tym referacie. Nie kuj — buduj „szkielet", na który wskoczą fakty.</div>
+              <span className="plan-time">0:00–0:20</span>
+              <div><strong>👀 Spokojne pierwsze przejście.</strong> Przejdź wszystkie fiszki na luzie (Spacja = obróć, → dalej). Tylko czytasz pytanie i odpowiedź — niczego nie kujesz. Chodzi o złapanie, „o co chodzi" w każdym z 8 tematów.</div>
             </div>
             <div className="plan-step">
-              <span className="plan-time">0:25–1:25</span>
-              <div><strong>📚 Fiszki temat po temacie — aktywnie.</strong> Przeczytaj pytanie i <b>powiedz odpowiedź na głos ZANIM obrócisz kartę</b> (Spacja). Dopiero potem sprawdź. Trafione → <b>Z</b>, pudło → <b>X</b>. Bądź szczery — to czego nie powiesz z głowy, leci na X.</div>
+              <span className="plan-time">0:20–1:30</span>
+              <div><strong>📚 Drugie przejście — aktywnie, temat po temacie.</strong> Czytasz pytanie i <b>mówisz odpowiedź na głos ZANIM obrócisz</b>. Dopiero potem sprawdzasz. To (nie bierne czytanie) wgrywa wiedzę.</div>
             </div>
             <div className="plan-step">
-              <span className="plan-time">1:25–1:35</span>
+              <span className="plan-time">1:30–1:40</span>
               <div><strong>☕ Przerwa.</strong> Bez telefonu. Mózg utrwala w tle.</div>
             </div>
             <div className="plan-step">
-              <span className="plan-time">1:35–2:25</span>
-              <div><strong>🔁 Powtórz trudne + zapisz.</strong> W każdym temacie klikaj <b>„Powtórz trudne"</b> aż lista zniknie. Daty/imiona, które nie wchodzą — <b>wypisz ręcznie na kartce</b> i zrób mnemonik (patrz niżej). Ręka pamięta.</div>
+              <span className="plan-time">1:40–2:30</span>
+              <div><strong>✍️ Trzecie przejście + kartka.</strong> Skup się na tematach, które idą słabo. Daty i imiona, które nie wchodzą — <b>wypisz ręcznie</b> i zrób mnemonik (niżej). Ręka pamięta lepiej niż oko.</div>
             </div>
             <div className="plan-step">
-              <span className="plan-time">2:25–2:50</span>
-              <div><strong>🧠 Recytacja z pamięci (najmocniejsze!).</strong> Zamknij apkę. Po kolei dla każdego z 8 tematów powiedz/wypisz z głowy wszystko, co pamiętasz. Potem otwórz „Wszystkie Pytania" i sprawdź dziury. Czego nie umiałeś → wróć na fiszki.</div>
+              <span className="plan-time">2:30–2:55</span>
+              <div><strong>🧠 Recytacja z pamięci (najmocniejsze).</strong> Zamknij fiszki. Dla każdego z 8 tematów powiedz/wypisz z głowy wszystko, co pamiętasz. Potem otwórz „Wszystkie Pytania" i sprawdź dziury.</div>
             </div>
             <div className="plan-step">
-              <span className="plan-time">2:50–3:00</span>
-              <div><strong>✅ Ostatni rzut.</strong> Tylko karty, które wciąż kuleją, + przeczytaj raz mnemoniki. Idź spać / na egzamin pewny.</div>
+              <span className="plan-time">2:55–3:00</span>
+              <div><strong>✅ Ostatni rzut.</strong> Tylko to, co wciąż kuleje, + przeczytaj mnemoniki raz.</div>
             </div>
           </div>
           <div className="plan-tip">
-            <strong>💡 Mnemoniki (najczęstsze pytania):</strong> Karakalla → <b>212</b> obywatelstwo, ojciec <b>Septymiusz Sewer</b> + matka <b>Julia Domna</b>, brat <b>Geta</b>. Więźniowie → <b>320</b> Konstantyn (światło dzienne), <b>340</b> Konstancjusz (M/K osobno), <b>529</b> Justynian (koniec więzień prywatnych). Adopcja → <b>18 lat</b> różnicy = <i>plena pubertas</i>, słowa <b>Cycerona</b>. Aborcja → reskrypt <b>198–211</b> Sewer + Karakalla (chodziło o prawo OJCA, nie o płód). Obywatelstwo Italii → <b>89 p.n.e.</b> (wojna ze sprzymierzeńcami) → szczyt: <b>212</b> Constitutio Antoniniana.
-          </div>
-        </main>
-      )}
-
-      {view === 'theory' && (
-        <main className="theory-view">
-          <button className="back-btn" onClick={() => setView('home')}>← Wróć do menu</button>
-          <div className="view-header">
-            <h2>📜 Streszczenia Referatów</h2>
-            <p>Pigułka wiedzy, która pomoże Ci ułożyć pytania w logiczną całość. 8 referatów.</p>
-          </div>
-          <div className="theory-list">
-            {theory.map((item, index) => (
-              <div
-                key={index}
-                className={`theory-card ${expandedTheory === index ? 'expanded' : ''}`}
-                onClick={() => toggleTheory(index)}
-              >
-                <div className="theory-card-header">
-                  <h3>{item.topic}</h3>
-                  <span className="toggle-icon">{expandedTheory === index ? '−' : '+'}</span>
-                </div>
-                {expandedTheory === index && (
-                  <div className="theory-content">
-                    <p>{item.content}</p>
-                  </div>
-                )}
-              </div>
-            ))}
+            <strong>💡 Mnemoniki:</strong> Karakalla → <b>212</b> obywatelstwo, ojciec <b>Septymiusz Sewer</b> + matka <b>Julia Domna</b>, brat <b>Geta</b>. Więźniowie → <b>320</b> Konstantyn (światło dzienne), <b>340</b> Konstancjusz (M/K osobno), <b>529</b> Justynian (koniec więzień prywatnych). Adopcja → <b>18 lat</b> różnicy = <i>plena pubertas</i>, słowa <b>Cycerona</b>. Aborcja → reskrypt <b>198–211</b> Sewer + Karakalla (chodziło o prawo OJCA). Obywatelstwo Italii → <b>89 p.n.e.</b> → szczyt: <b>212</b> Constitutio Antoniniana.
           </div>
         </main>
       )}
@@ -246,11 +190,11 @@ function App() {
               </div>
               <div className="timeline-item">
                 <span className="dot"></span>
-                <strong>Drugie przejście (ok. 1h):</strong> Ponowne przejrzenie. Będziesz już pamiętać około 50-60% odpowiedzi.
+                <strong>Drugie przejście (ok. 1h):</strong> Ponowne przejrzenie z odpowiadaniem z pamięci. Będziesz już pamiętać około 50-60% odpowiedzi.
               </div>
               <div className="timeline-item">
                 <span className="dot"></span>
-                <strong>Utrwalenie w Quizie (ok. 45-60 min):</strong> Rozwiązanie 3-4 quizów. Mózg rozpoznaje prawidłowe odpowiedzi i buduje żelazne skojarzenia.
+                <strong>Recytacja z pamięci (ok. 45-60 min):</strong> Mówienie odpowiedzi z głowy i sprawdzanie w „Wszystkich Pytaniach". Mózg buduje trwałe skojarzenia.
               </div>
             </div>
             <p className="summary-text">Razem: około <strong>3 do 4 godzin</strong> solidnej nauki. Masz mało czasu? Otwórz <strong>Plan 3h ⚡</strong> z menu głównego.</p>
@@ -258,7 +202,7 @@ function App() {
 
           <div className="info-card verification-card">
             <h3>🛡️ O bazie pytań</h3>
-            <p>Baza została dokładnie zweryfikowana z dwóch dostarczonych plików PDF. Każda odpowiedź jest dokładnie taka jak w bazie (1:1) — sprawdzono automatycznie, że jej treść występuje słowo w słowo w jednym z plików. Pytania z obu baz zostały połączone bez przeredagowywania, a powtórzenia złączone w jeden wpis. Z bazy wykluczono tematy, które nie były na Twojej liście 8 referatów.</p>
+            <p>Każde pytanie i każda odpowiedź pochodzą słowo w słowo z dwóch dostarczonych plików PDF (sprawdzone automatycznie — treść występuje dosłownie w jednym z plików). Pytania z obu baz połączono bez przeredagowywania, a powtórzenia złączono w jeden wpis. Nic nie jest dopisane „od siebie".</p>
           </div>
         </main>
       )}
@@ -295,7 +239,7 @@ function App() {
           <button className="back-btn" onClick={() => setView('home')}>← Wróć do menu</button>
           <div className="view-header">
             <h2>Wybierz temat</h2>
-            <button className="cram-btn" onClick={startCram}>🔀 Ucz się wszystkiego (cram, {allQuestions.length})</button>
+            <button className="cram-btn" onClick={startCram}>🔀 Ucz się wszystkiego ({allQuestions.length})</button>
           </div>
           <div className="topics-grid">
             {data.map((topicData, index) => (
@@ -325,7 +269,7 @@ function App() {
             <div className="progress-bar" style={{width: `${((cardIdx + 1) / deck.length) * 100}%`}}></div>
           </div>
           <div className="progress-text">
-            Pytanie {cardIdx + 1} z {deck.length} · <span className="known-pill">✓ {knownCount}</span> <span className="hard-pill">↻ {hardCount}</span>
+            Pytanie {cardIdx + 1} z {deck.length}
           </div>
 
           <div className={`flip-card ${isFlipped ? 'flipped' : ''}`} onClick={() => setIsFlipped(!isFlipped)}>
@@ -341,23 +285,11 @@ function App() {
             </div>
           </div>
 
-          <div className="fc-actions">
-            <button className="fc-btn hard" onClick={() => mark(false)}>↻ Powtórz <kbd>X</kbd></button>
-            <button className="fc-btn knownbtn" onClick={() => mark(true)}>✓ Umiem <kbd>Z</kbd></button>
-          </div>
-
           <div className="controls">
             <button className="nav-btn" onClick={prevFlashcard} disabled={cardIdx === 0}>← Poprzednie</button>
-            <button className="nav-btn" onClick={reshuffle}>🔀 Tasuj</button>
             <button className="nav-btn primary-btn" onClick={nextFlashcard} disabled={cardIdx === deck.length - 1}>Następne →</button>
           </div>
-
-          {cardIdx === deck.length - 1 && hardCount > 0 && (
-            <button className="repeat-hard-btn" onClick={repeatHard}>
-              🔁 Powtórz trudne ({hardCount})
-            </button>
-          )}
-          <p className="kbd-hint">Klawisze: <kbd>Spacja</kbd> obróć · <kbd>→</kbd>/<kbd>←</kbd> nawigacja · <kbd>Z</kbd> umiem · <kbd>X</kbd> powtórz</p>
+          <p className="kbd-hint">Klawisze: <kbd>Spacja</kbd> obróć · <kbd>→</kbd> / <kbd>←</kbd> nawigacja</p>
         </main>
       )}
 

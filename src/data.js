@@ -493,38 +493,3 @@ export const data = [
     ]
   }
 ];
-
-export const theory = [
-  {
-    topic: "Związki Theodora Mommsena z Wrocławiem",
-    content: "Theodor Mommsen (1817-1903) to wybitny niemiecki historyk i prawnik, jedyny reprezentant nauk historycznoprawnych z literacką Nagrodą Nobla (1902 za 'Historię rzymską'). Do Wrocławia przybył w 1854 r. po utracie posady w Lipsku za udział w Wiośnie Ludów. We Wrocławiu objął katedrę prawa rzymskiego (mimo początkowego braku chętnych na wykłady). To w tym mieście ukończył trzy pierwsze tomy 'Historii rzymskiej'. Angażował się w lokalne życie akademickie i polityczne (był liberałem opowiadającym się za zjednoczeniem Niemiec). Wrocław traktował jako przystanek w drodze do Berlina, dokąd przeniósł się w 1858 r. Mimo negatywnego stosunku do Polaków i Słowian, jego pobyt we Wrocławiu był jego najbardziej płodnym okresem literackim."
-  },
-  {
-    topic: "Spory wokół dziejowej roli Słowian (Balzer vs Mommsen)",
-    content: "W 1897 r. na łamach wiedeńskiego 'Neue Freie Presse', 80-letni Mommsen opublikował list do 'Niemców w Austrii'. W tekście tym, oburzony próbami zrównania języka czeskiego z niemieckim (rozporządzenia Badeniego), nazwał Słowian 'apostołami barbarzyństwa' dążącymi do zniszczenia 500-letniej pracy Niemców. Na tę szowinistyczną i anty-słowiańską odezwę najdobitniej odpowiedział Oswald Balzer (1858-1933) – polski uczony i historyk prawa. W swoim liście w 'Słowie Polskim' stanowczo bronił kultury słowiańskiej i jej wkładu w cywilizację europejską, wykazując historyczne pomyłki i uprzedzenia niemieckiego noblisty. Mommsen został po tym wydarzeniu okrzyknięty m.in. 'spadkobiercą krzyżactwa'."
-  },
-  {
-    topic: "Constitutio Antoniniana. Przyczyny wydania edyktu Karakalli (212 r.)",
-    content: "Edykt cesarza Karakalli z 212 r. n.e., znany jako Constitutio Antoniniana, nadał obywatelstwo rzymskie wszystkim wolnym mieszkańcom Imperium, z wyjątkiem najbiedniejszej grupy pokonanych (peregrini dediticii); poza edyktem pozostali też peregrini certae civitatis. Wiemy o nim głównie dzięki Kasjuszowi Dionowi (Dio Cassius) oraz Ulpianowi, a jego treść potwierdza papirus Gissensis 40. Powody wydania edyktu to: motyw proceduralno-administracyjny (usprawnienie nadawania obywatelstwa wobec mnóstwa wniosków), asymilacja żywiołów obcych (kosmopolityczna koncepcja Sewera), motyw religijny (zjednanie poddanych dla kultu bóstw państwowych) oraz podłoże fiskalne (niedobory w skarbcu, dewaluacja pieniądza i zobowiązania wobec wojska). Karakalla – syn Septymiusza Sewera i Julii Domny – urodził się w Lugdunum (Lyon). Pełne obywatelstwo wykluczonym grupom nadał dopiero Justynian w 530 r."
-  },
-  {
-    topic: "Sprzedaż niewolników (edykt De mancipiis vendundis)",
-    content: "Obrót niewolnikami na rzymskich targowiskach nadzorowali edylowie kurulni. W I w. p.n.e. wydali oni edykt 'De mancipiis vendundis', który ogłaszał katalog typowych wad niewolnika: choroby i defekty cielesne, wady umysłu, negatywne cechy charakteru (np. skłonność do ucieczek czy włóczęgostwa), karalność i narodowość. Sprzedawca musiał jawnie zadeklarować te wady, a odpowiadał za nie nawet wtedy, gdy o nich nie wiedział (odpowiedzialność obiektywna) – pod warunkiem, że umowę zawarto na targowisku, a wada była wymieniona w edykcie. Pierwotnie edykt dotyczył tylko sprzedaży niewolników na targowiskach, a w czasach Gaiusa rozszerzono go także na sprzedaż gruntów, zbywanie majątku nieletnich i handel niewolnikami poza targowiskami. Kryteria wyceny niewolnika (wg Ulpiana): narodowość, wiek, wykształcenie i cechy fizyczne (siła, muskulatura, zdrowie); ceny wahały się od 200 do 700 000 sesterców."
-  },
-  {
-    topic: "Traktowanie więźniów w konstytucjach cesarskich z okresu dominatu",
-    content: "W okresie dominatu (od przełomu III/IV wieku) zaczęto wprowadzać humanitarne regulacje dotyczące przetrzymywania więźniów, co wiązało się m.in. z chrystianizacją imperium. Cesarz Konstantyn Wielki w 320 r. zakazał trzymania oskarżonych w ciemnicy, nakazując zapewnienie im światła dziennego i zakazując stosowania zbyt ciężkich kajdan. Konstancjusz (340 r.) wprowadził podział więzień na męskie i żeńskie. Gracjan i Walentynian (380 r.) nakazali sporządzanie rejestrów więźniów co 30 dni, a Honoriusz zobowiązał sędziów do niedzielnych wizytacji (od 419 r. pozwolono wchodzić do więzień biskupom). O złych warunkach w więzieniach pisał retor Libaniusz do Teodozjusza Wielkiego. Justynian w 529 r. całkowicie zakazał istnienia więzień prywatnych."
-  },
-  {
-    topic: "Prawo rzymskie wobec aborcji",
-    content: "Początkowo rzymskie prawo nie penalizowało aborcji, traktując płód (nasciturus) wyłącznie jako część wnętrzności matki (portio mulieris). Podejście zaczęło się zmieniać w okresie cesarstwa m.in. z pobudek demograficznych. Septymiusz Sewer i Karakalla w latach 198-211 (reskrypt z ok. 211 r.) zakazali aborcji, jednak powodem nie była ochrona życia płodu, ale ochrona praw ojca do posiadania potomstwa (za usunięcie ciąży bez zgody męża groziło żonie czasowe wygnanie). Konstantyn Wielki (331 r.) i Teodozjusz II (449 r.), redukując podstawy do rozwodu, pominęli kwestię sztucznego poronienia. Już lex Cornelia z 81 r. p.n.e. (prawo przeciw mordom) zaczęto z czasem stosować do wytwarzających środki aborcyjne. Dopiero pod wpływem wschodnich systemów i chrześcijaństwa (od II w. n.e.) zaczęto zbliżać sztuczne poronienie do zabójstwa, choć prawo długo powielało dawne świeckie formuły."
-  },
-  {
-    topic: "Zasada 'adoptio naturam imitatur' (Adopcja naśladuje naturę)",
-    content: "Rzymska paremia 'adoptio naturam imitatur' oznacza, że adopcja powinna naśladować biologię i naturę (słowa Cycerona). Była ona instytucją stworzoną by przedłużyć ród dla osób bezdzietnych. Zasadniczo adoptujący musiał być starszy od adoptowanego o okres pełnej dojrzałości fizycznej i psychicznej ('plena pubertas'), czyli 18 lat (różnicę tę wyznaczył Modestyn; o pojęciu wiemy od Teofilusa i Paulusa). Kompilatorzy justyniańscy uważali przysposobienie starszego przez młodszego za sprzeczne z naturą, chociaż w czasach Republiki takie przypadki były początkowo tolerowane (Cyceron opisał arogację Klodiusza Pulchra, starszego od arogującego go Publiusza Fonteiusza). Rozróżniano arogację (adrogatio – przyjęcie pod władzę dojrzałego mężczyzny sui iuris, decyzją zgromadzenia ludowego) i adopcję właściwą (adoptio sensu stricto – osób alieni iuris, przy udziale pretora). Zakaz adopcji przez kastratów (castrati) i niewolników zniósł Leon Filozof."
-  },
-  {
-    topic: "Nadawanie obywatelstwa rzymskiego",
-    content: "Rzymianie przez wieki różnicowali ludność na obywateli, Latynów i peregrynów (cudzoziemców). Integracja przebiegała stopniowo dzięki kolejnym ustawom: Lex Acilia (123/2 p.n.e.) przewidywała nagrodę obywatelstwa dla peregrynów skutecznie oskarżających urzędnika, Lex Iulia de civitate (90 p.n.e.) nadawała obywatelstwo wiernym sprzymierzeńcom, a Lex Plautia Papiria (89 p.n.e.) otwierała je dla mieszkańców Italii – skutkiem wojny ze sprzymierzeńcami w 89 r. p.n.e. obywatelstwo otrzymali wszyscy mieszkańcy Italii. Obywatelstwo nadawano też prowincjom (cesarz Klaudiusz nadał je mieszkańcom Volubilis, dziś w Maroku). Zwieńczeniem procesu była Constitutio Antoniniana – edykt Karakalli z 212 r., który nadał obywatelstwo niemal wszystkim wolnym mieszkańcom Imperium, dążąc do integracji społeczeństwa, zwiększenia obronności i poboru podatków od większej liczby ludzi."
-  }
-];
