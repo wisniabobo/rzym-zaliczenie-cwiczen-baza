@@ -408,9 +408,37 @@
 
 *Odp:* Ze statusem peregrini dediticii zrównano wyzwoleńców, którzy będąc w niewoli zostali ukarani za ciężkie przestępstwa lub byli używani do walk w cyrku.
 
-## Bez numeru referatu
+## Pytania z pierwszych zajęć (bez numeru referatu)
 
 **1. Gdzie znajduje się na stałe czarka znaleziona w Opolu/Gosławicach odnaleziona w I w. p.n.e. (Pucharek - czarka odnaleziona w Opolu w I w)?**
 
 *Odp:* Obecnie znajduje się w Muzeum Archeologicznym we Wrocławiu.
+
+**2. Jak nazywają się ustawy przeciwko zbytkowi?**
+
+*Odp:* Lex Oppia, Lex Orchia, Lex Fannia.
+
+**3. Wymień miasta związane z Libaniuszem.**
+
+*Odp:* Konstantynopol, Antiochia, Bejrut, Ateny.
+
+**4. Którzy cesarze sprzeciwiali się aborcji?**
+
+*Odp:* Septymiusz Sewer, Antoniusz Karakalla, Justynian.
+
+**5. W którym roku według Tytusa w Rzymie był budynek 3-piętrowy?**
+
+*Odp:* W 218 r. p.n.e. budynek wielopiętrowy w Rzymie.
+
+**6. Jak po łacinie jest obraza 2. strony albo sędziego?**
+
+*Odp:* Maledictum lub convictum.
+
+**7. Jacy władcy regulowali kastrowanie?**
+
+*Odp:* Domicjan, Hadrian, Konstantyn, Nerwa, Leon, Justynian, ustawy Sulli.
+
+**8. Który papież z XIII w. zakazał duchownym studiować prawo?**
+
+*Odp:* Papież Honoriusz III w 1219 r. wydał Bullę Super Speculam, wprowadzając zakaz nauki prawa rzymskiego na Uniwersytecie Paryskim.
 

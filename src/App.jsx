@@ -117,6 +117,10 @@ function App() {
               <div className="icon-wrapper">📜</div>
               <h2>Teoria</h2>
             </div>
+            <div className="menu-card small-card" onClick={() => setView('list-all')}>
+              <div className="icon-wrapper">📋</div>
+              <h2>Wszystkie Pytania</h2>
+            </div>
             <div className="menu-card small-card" onClick={() => setView('info')}>
               <div className="icon-wrapper">ℹ️</div>
               <h2>Info</h2>
@@ -181,6 +185,33 @@ function App() {
           <div className="info-card verification-card">
             <h3>🛡️ O bazie pytań</h3>
             <p>Baza została dokładnie zweryfikowana z dwóch dostarczonych plików PDF (ponad 120 pytań z tabeli i notatek). Wszystkie powtórzenia zostały złączone w spójne bloki wiedzy. Z bazy wykluczono tematy, które nie obowiązywały w wymaganym spisie referatów.</p>
+          </div>
+        </main>
+      )}
+
+      {view === 'list-all' && (
+        <main className="list-all-view" style={{padding: '20px', maxWidth: '800px', margin: '0 auto'}}>
+          <button className="back-btn" onClick={() => setView('home')}>← Wróć do menu</button>
+          <div className="view-header">
+            <h2>📋 Wszystkie Pytania i Odpowiedzi</h2>
+            <p>Pełna baza wszystkich pytań w jednym miejscu.</p>
+          </div>
+          <div className="all-questions-list">
+            {data.map((topicData, topicIdx) => (
+              <div key={topicIdx} className="theory-card expanded">
+                <div className="theory-card-header">
+                  <h3>{topicData.topic}</h3>
+                </div>
+                <div className="theory-content">
+                  {topicData.questions.map((q, qIdx) => (
+                    <div key={qIdx} style={{marginBottom: '1rem', paddingBottom: '1rem', borderBottom: '1px solid rgba(255,255,255,0.1)'}}>
+                      <div style={{fontWeight: 'bold', marginBottom: '0.5rem'}}>{qIdx + 1}. {q.q}</div>
+                      <div style={{color: '#ddd'}}>{q.a}</div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ))}
           </div>
         </main>
       )}

@@ -138,9 +138,16 @@ export const data = [
     ]
   },
   {
-    topic: "Bez numeru referatu",
+    topic: "Pytania z pierwszych zajęć (bez numeru referatu)",
     questions: [
-      { q: "Gdzie znajduje się na stałe czarka znaleziona w Opolu/Gosławicach odnaleziona w I w. p.n.e. (Pucharek - czarka odnaleziona w Opolu w I w)?", a: "Obecnie znajduje się w Muzeum Archeologicznym we Wrocławiu." }
+      { q: "Gdzie znajduje się na stałe czarka znaleziona w Opolu/Gosławicach odnaleziona w I w. p.n.e. (Pucharek - czarka odnaleziona w Opolu w I w)?", a: "Obecnie znajduje się w Muzeum Archeologicznym we Wrocławiu." },
+      { q: "Jak nazywają się ustawy przeciwko zbytkowi?", a: "Lex Oppia, Lex Orchia, Lex Fannia." },
+      { q: "Wymień miasta związane z Libaniuszem.", a: "Konstantynopol, Antiochia, Bejrut, Ateny." },
+      { q: "Którzy cesarze sprzeciwiali się aborcji?", a: "Septymiusz Sewer, Antoniusz Karakalla, Justynian." },
+      { q: "W którym roku według Tytusa w Rzymie był budynek 3-piętrowy?", a: "W 218 r. p.n.e. budynek wielopiętrowy w Rzymie." },
+      { q: "Jak po łacinie jest obraza 2. strony albo sędziego?", a: "Maledictum lub convictum." },
+      { q: "Jacy władcy regulowali kastrowanie?", a: "Domicjan, Hadrian, Konstantyn, Nerwa, Leon, Justynian, ustawy Sulli." },
+      { q: "Który papież z XIII w. zakazał duchownym studiować prawo?", a: "Papież Honoriusz III w 1219 r. wydał Bullę Super Speculam, wprowadzając zakaz nauki prawa rzymskiego na Uniwersytecie Paryskim." }
     ]
   }
 ];
