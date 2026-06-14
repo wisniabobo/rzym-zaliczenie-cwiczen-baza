@@ -37,7 +37,7 @@ export const data = [
     ]
   },
   {
-    "topic": "Referat 1. Związki Theodora Mommsena z Wrocławiem",
+    "topic": "Związki Theodora Mommsena z Wrocławiem",
     "questions": [
       {
         "q": "Wymień miasta związane z życiem i nauczaniem Mommsena",
@@ -158,7 +158,7 @@ export const data = [
     ]
   },
   {
-    "topic": "Referat 3. Spory wokół dziejowej roli słowian - Oswald Balzer kontra Theodor Mommsen",
+    "topic": "Spory wokół dziejowej roli Słowian (Balzer vs Mommsen)",
     "questions": [
       {
         "q": "Kiedy i gdzie ukazał się anonimowy list Theodora Mommsena do “Niemców w Austrii”?",
@@ -199,7 +199,7 @@ export const data = [
     ]
   },
   {
-    "topic": "Referat 5. Constitutio Antoniniana. Przyczyny wydania edyktu karakalli z 212 roku w świetle współczesnych źródeł historyczno-prawnych",
+    "topic": "Constitutio Antoniniana. Przyczyny wydania edyktu Karakalli (212 r.)",
     "questions": [
       {
         "q": "Kim byli peregrini dediticii?",
@@ -268,7 +268,7 @@ export const data = [
     ]
   },
   {
-    "topic": "Referat 6. Sprzedaż niewolników rzymskich",
+    "topic": "Sprzedaż niewolników (edykt De mancipiis vendundis)",
     "questions": [
       {
         "q": "Jaki urzędnik rzymski był odpowiedzialny za niewolników?",
@@ -301,7 +301,7 @@ export const data = [
     ]
   },
   {
-    "topic": "Referat 7. Traktowanie więźniów w konstytucjach cesarskich z okresu dominatu",
+    "topic": "Traktowanie więźniów w konstytucjach cesarskich z okresu dominatu",
     "questions": [
       {
         "q": "Który cesarz i kiedy postanowił aby oskarżeni nie mogli być przetrzymywani w ciemnicy lecz mieli zapewnione korzystanie ze światła dziennego?",
@@ -326,7 +326,7 @@ export const data = [
     ]
   },
   {
-    "topic": "Referat 9. prawo rzymskie wobec aborcji",
+    "topic": "Prawo rzymskie wobec aborcji",
     "questions": [
       {
         "q": "Którzy cesarze wydali reskrypt przeciw winnym przerywania ciąży w starożytnym Rzymie? / Którzy cesarze sprzeciwili się aborcji?",
@@ -359,7 +359,7 @@ export const data = [
     ]
   },
   {
-    "topic": "Referat 11. Zasada adoptio naturam imitatur w prawie rzymskim, początki adrogacji niedojrzałych w prawie rzymskim",
+    "topic": "Zasada 'adoptio naturam imitatur' (Adopcja naśladuje naturę)",
     "questions": [
       {
         "q": "Kto uchylił zakaz dokonywania adopcji przez kastratów?",
@@ -424,7 +424,7 @@ export const data = [
     ]
   },
   {
-    "topic": "Referat 13. Nadawanie obywatelstwa Rzymskiego",
+    "topic": "Nadawanie obywatelstwa rzymskiego",
     "questions": [
       {
         "q": "Jakie były skutki Ustaw wojny ze sprzymierzeńcami?",

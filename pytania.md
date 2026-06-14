@@ -34,7 +34,7 @@
 
 *Odp:* Papież Honoriusz III w 1219r. wydał – Bulla Super Speculam, wprowadzając zakaz nauki prawa rzymskiego na Uniwersytecie Paryskim
 
-## Referat 1. Związki Theodora Mommsena z Wrocławiem
+## Związki Theodora Mommsena z Wrocławiem
 
 **1. Wymień miasta związane z życiem i nauczaniem Mommsena**
 
@@ -159,7 +159,7 @@
 
 *Odp:* - ul. Kotlarska 19 w kamienicy “Pod Złotym Krzyżem”, 1856r. przeprowadził się na ul. Ketzerberga 10
 
-## Referat 3. Spory wokół dziejowej roli słowian - Oswald Balzer kontra Theodor Mommsen
+## Spory wokół dziejowej roli Słowian (Balzer vs Mommsen)
 
 **1. Kiedy i gdzie ukazał się anonimowy list Theodora Mommsena do “Niemców w Austrii”?**
 
@@ -197,7 +197,7 @@
 
 *Odp:* - List miał bardzo negatywny, wręcz nacjonalistyczny wydźwięk. Mommsen nie tylko krytykował ale wręcz groził Czechom, ale także wszystkim słowianom. Podjudzał austriackich Niemców do agresji walki z barbarzyństwem. Uważał Czechów, którzy przejawiali uczucia narodowowyzwoleńcze, za buntowników mimo że najbardziej agresywni byli właśnie Niemcy.
 
-## Referat 5. Constitutio Antoniniana. Przyczyny wydania edyktu karakalli z 212 roku w świetle współczesnych źródeł historyczno-prawnych
+## Constitutio Antoniniana. Przyczyny wydania edyktu Karakalli (212 r.)
 
 **1. Kim byli peregrini dediticii?**
 
@@ -268,7 +268,7 @@
 
 *Odp:* - Cesarz w obliczu zobowiązań wobec wojska, niedoboru w skarbcu i dewaluacji pieniądza musiał znaleźć dodatkowe źródła dochodu. Płacić mogli tylko ci którzy byli w stanie to robić, dlatego dediticii jako warstwa najuboższa nie mogli być taką siłą polityczną, nie byli w stanie opłacać podatku od wyzwoleń czy spadków powyżej 100 tysięcy sesterców. Dlatego też zostali wyłączeni z ogólnego obywatelstwa.
 
-## Referat 6. Sprzedaż niewolników rzymskich
+## Sprzedaż niewolników (edykt De mancipiis vendundis)
 
 **1. Jaki urzędnik rzymski był odpowiedzialny za niewolników?**
 
@@ -298,7 +298,7 @@
 
 *Odp:* - peregrini - najczęściej byli sprzedawcami, a obiektem??
 
-## Referat 7. Traktowanie więźniów w konstytucjach cesarskich z okresu dominatu
+## Traktowanie więźniów w konstytucjach cesarskich z okresu dominatu
 
 **1. Który cesarz i kiedy postanowił aby oskarżeni nie mogli być przetrzymywani w ciemnicy lecz mieli zapewnione korzystanie ze światła dziennego?**
 
@@ -326,7 +326,7 @@
 - 451 Walentynian III - nowela o humanitarnym traktowaniu
 - 529 Justynian - zakaz więzień prywatnych, Regularne wizyty biskupów, prowadzono maksymalny okres przetrzymywania
 
-## Referat 9. prawo rzymskie wobec aborcji
+## Prawo rzymskie wobec aborcji
 
 **1. Którzy cesarze wydali reskrypt przeciw winnym przerywania ciąży w starożytnym Rzymie? / Którzy cesarze sprzeciwili się aborcji?**
 
@@ -356,7 +356,7 @@
 
 *Odp:* - Mąż ma prawo zażądać 1/6 Posagu oraz rozwodu za poronienie
 
-## Referat 11. Zasada adoptio naturam imitatur w prawie rzymskim, początki adrogacji niedojrzałych w prawie rzymskim
+## Zasada 'adoptio naturam imitatur' (Adopcja naśladuje naturę)
 
 **1. Kto uchylił zakaz dokonywania adopcji przez kastratów?**
 
@@ -423,7 +423,7 @@
 
 *Odp:* - Polega na wyzwoleniu osób podległych Pater familias spod jego władzy
 
-## Referat 13. Nadawanie obywatelstwa Rzymskiego
+## Nadawanie obywatelstwa rzymskiego
 
 **1. Jakie były skutki Ustaw wojny ze sprzymierzeńcami?**
 
